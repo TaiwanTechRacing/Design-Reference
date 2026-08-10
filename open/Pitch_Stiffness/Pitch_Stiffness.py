@@ -7,7 +7,7 @@ g = 9.81
 
 # Vehicle data
 m = 321          # kg
-a = 1.7          # acceleration (g)
+a = 1.6          # acceleration (g)
 h = 0.3         # CG height (m)
 L = 1.53         # wheelbase (m)
 target_theta = 1.5
@@ -39,6 +39,9 @@ K_target = K[idx]
 
 print(f"Pitch stiffness @ {target_theta:.1f}° = {K_target:.1f} N/m")
 
+# 計算目標行程
+target_s = (L / 2) * np.deg2rad(target_theta)
+print(f"Target displacement @ {target_theta:.1f}° = {target_s:.3f} m")
 
 # Plot
 # ============================================
