@@ -3,4 +3,4 @@
 
 [Private](Private/Private.md)
 
-[link](document/link.md)
+[link](open/link.md)
