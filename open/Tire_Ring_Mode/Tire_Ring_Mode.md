@@ -1,3 +1,7 @@
+---
+layout: base
+---
+
 # 輪胎環形振動模態（Tire Ring Mode Frequencies）計算與分析說明
 
 ## 簡介
@@ -56,4 +60,9 @@ $$f_n = \frac{\omega_n}{2\pi} = \frac{1}{2\pi} \sqrt{\frac{E \cdot I}{\rho \cdot
   隨著 $n$ 增加，頻率增長主要取決於多項式因子 $n^2(n^2 - 1) \approx n^4$，代表高階模態的剛度呈高次冪上升，頻率隨階數快速遞增。
 
 ## 結果
-![img](Tire_Ring_Mode_Frequencies.png)
+
+<div style="text-align: center;">
+<img src="Tire_Ring_Mode_Frequencies.png" alt="image" width="500">
+</div>
+
+由此圖可以觀察到理論上需要避開的頻率

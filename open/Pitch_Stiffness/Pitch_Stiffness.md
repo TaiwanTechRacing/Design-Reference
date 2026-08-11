@@ -57,6 +57,10 @@ $$K = \frac{\frac{M}{L}}{\left(\frac{L}{2} \cdot \theta\right)} = \frac{2M}{L^2 
 由此式可知，所需的俯仰剛度 $K$ 與俯仰角 $\theta$ 成反比關係：若允許的俯仰角 $\theta$ 越小，所需之剛度 $K$ 越高。
 
 ## 結果
-![img](Pitch_Stiffness_Requirement.png)
+
+<div style="text-align: center;">
+<img src="Pitch_Stiffness_Requirement.png" alt="image" width="500">
+</div>
+
 
 如上圖計算結果可以得知前後懸吊pitch的剛性下限需求，真實車輛的heave剛性前後不同，這邊計算出來的剛性是最低下限值。

@@ -1,3 +1,7 @@
+---
+layout: base
+---
+
 # 車架剛性與等效懸吊剛度（Overall Rigidity & Equivalent Stiffness）計算與分析說明
 
 ## 一、 簡介與物理機制
@@ -52,5 +56,10 @@ $$K_{\text{eq}} = \frac{1}{\frac{1}{K_t} + \frac{1}{K_s} + \frac{1}{K_c}}$$
 因此，賽車與車輛工程中常採用 **10倍原則**（$K_c = 10 \cdot K_s$）作為設計折衷點，確保能夠獲得飽和極限約 $90\% \sim 95\%$ 以上的剛度表現。
 
 ## 結果
-![img](Overall_Rigidity.png)
+
+<div style="text-align: center;">
+<img src="Overall_Rigidity.png" alt="image" width="500">
+</div>
+
+
 我們之後會採用上圖中10倍的剛性用於懸吊roll center 的幾何傳力分析，上圖並不是用來當扭轉剛性參考值用的

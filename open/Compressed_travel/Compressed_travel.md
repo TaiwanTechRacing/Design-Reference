@@ -1,3 +1,7 @@
+---
+layout: base
+---
+
 # 車輛俯仰與側傾剛度（Pitch / Roll Stiffness）計算與分析說明
 
 ## 簡介
@@ -70,8 +74,16 @@ $$\theta_{\text{deg}} = \text{rad2deg}\left(\theta\right)$$
 
 ## 結果
 
-![img1](Compressed_travel.png)
+
+<div style="text-align: center;">
+<img src="Compressed_travel.png" alt="image" width="500">
+</div>
+
+
 根據懸吊行程估算出來的最低剛性限制如上，此限制通常可能比空力的攻角限制小。需取較大值的當作下限制
 
-![img2](Travel_vs_Vehicle_Angle.png)
+<div style="text-align: center;">
+<img src="Travel_vs_Vehicle_Angle.png" alt="image" width="500">
+</div>
+
 以上為不同行程設定與最大姿態變化角度關係，可以用這個角度與空力限制交叉驗證。

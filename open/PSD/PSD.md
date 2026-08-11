@@ -1,3 +1,7 @@
+---
+layout: base
+---
+
 # ISO 8608 路面不平度產生與車輛動態激振頻譜分析說明
 
 ## 簡介
@@ -68,30 +72,58 @@ $$C(f) = \frac{\int_0^f E(f') \, df'}{\int_0^{\infty} E(f') \, df'}$$
 $$P_1(f_k) = 2 \cdot \vert{}Y(f_k)\vert{}, \quad \text{for } k = 1, 2, \dots, \frac{N}{2}$$
 
 ## 結果
-![img1](01_ISO_Road_Profile.png)
+
+<div style="text-align: center;">
+<img src="01_ISO_Road_Profile.png" alt="image" width="500">
+</div>
+
 根據 ISO 8608 標準（Class C 路面等級）並透過逆快速傅立葉轉換 (IFFT) 所模擬出的 1000 公尺長度空間路面不平度高程波形，呈現車輛行駛時實際產生的路面上下起伏變化。
 
-![img2](02_Vehicle_Speed_Trace.png)
+<div style="text-align: center;">
+<img src="02_Vehicle_Speed_Trace.png" alt="image" width="500">
+</div>
+
 畫vt圖用，澳洲賽的速度資料
 
-![img3](03_Speed_Distribution.png)
+<div style="text-align: center;">
+<img src="03_Speed_Distribution.png" alt="image" width="500">
+</div>
+
 簡單統計速度出現時間
 
-![img4](04_Speed_PDF.png)
+<div style="text-align: center;">
+<img src="04_Speed_PDF.png" alt="image" width="500">
+</div>
+
 將車速分佈進行歸一化後的概率密度函數 (PDF) 圖
 
-![img5](05_Weighted_Excitation_Spectrum.png)
+<div style="text-align: center;">
+<img src="05_Weighted_Excitation_Spectrum.png" alt="image" width="500">
+</div>
+
 結合路面功率譜密度 (PSD) 與車速概率密度 (PDF)，將空間頻率轉化為時間激振頻率並進行歸一化後得到的綜合激振能量頻譜，展現車輛實際承受的頻率能量分佈。
 
-![img6](06_Frequency_Energy.png)
+<div style="text-align: center;">
+<img src="06_Frequency_Energy.png" alt="image" width="500">
+</div>
+
 將總激振能量歸一化後的頻率能量分佈圖，呈現哪些頻率區間貢獻了主要的激振能量。基本上就是20以下的低頻
 
-![img7](07_Cumulative_Energy.png)
+<div style="text-align: center;">
+<img src="07_Cumulative_Energy.png" alt="image" width="500">
+</div>
+
 激振能量隨頻率增加的累積曲線（0–100%）可以用斜率變化進行分析
 
-![img8](08_Road_Profile_FFT.png)
+<div style="text-align: center;">
+<img src="08_Road_Profile_FFT.png" alt="image" width="500">
+</div>
+
 對時域路面高程進行快速傅立葉轉換 (FFT)，顯示在固定平均車速下，路面起伏在各時間頻率 (Hz) 上的幅值大小。基本上ISO就是完全沒有規律所以這是做好玩的
 
-![img9](09_Road_Profile_FFT_LogLog.png)
+<div style="text-align: center;">
+<img src="09_Road_Profile_FFT_LogLog.png" alt="image" width="500">
+</div>
+
 將路面 FFT 頻譜以雙對數 (Log-Log) 座標呈現。由於 ISO 8608 路面 PSD 具備負指數特性，雙對數圖中會呈現經典的高頻衰減直線特徵。這個驗證確認了上個分析是做好玩用的
 
