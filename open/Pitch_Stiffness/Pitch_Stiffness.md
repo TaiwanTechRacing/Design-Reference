@@ -59,7 +59,7 @@ $$K = \frac{\frac{M}{L}}{\left(\frac{L}{2} \cdot \theta\right)} = \frac{2M}{L^2 
 ## 結果
 
 <div style="text-align: center;">
-<img src="Pitch_Stiffness_Requirement.png" alt="image" width="500">
+<img src="Pitch_Stiffness_Requirement.png" alt="image" width="800">
 </div>
 
 

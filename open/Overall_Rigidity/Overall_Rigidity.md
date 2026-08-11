@@ -58,7 +58,7 @@ $$K_{\text{eq}} = \frac{1}{\frac{1}{K_t} + \frac{1}{K_s} + \frac{1}{K_c}}$$
 ## 結果
 
 <div style="text-align: center;">
-<img src="Overall_Rigidity.png" alt="image" width="500">
+<img src="Overall_Rigidity.png" alt="image" width="800">
 </div>
 
 

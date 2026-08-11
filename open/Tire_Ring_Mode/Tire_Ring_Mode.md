@@ -62,7 +62,7 @@ $$f_n = \frac{\omega_n}{2\pi} = \frac{1}{2\pi} \sqrt{\frac{E \cdot I}{\rho \cdot
 ## 結果
 
 <div style="text-align: center;">
-<img src="Tire_Ring_Mode_Frequencies.png" alt="image" width="500">
+<img src="Tire_Ring_Mode_Frequencies.png" alt="image" width="800">
 </div>
 
 由此圖可以觀察到理論上需要避開的頻率
