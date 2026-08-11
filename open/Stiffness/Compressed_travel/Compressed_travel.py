@@ -6,13 +6,13 @@ from pathlib import Path
 g = 9.81
 
 # Vehicle data
-m = 321          # kg
-ax = 1.6         # Longitudinal acceleration (g)
+m = 260          # kg
+ax = 1.7         # Longitudinal acceleration (g)
 ay = 1.7         # Lateral acceleration (g)
 
 h = 0.3         # CG height (m)
 L = 1.53         # Wheelbase (m)
-t = 1.25         # Track width (m)
+t = 1.265         # Track width (m)
 
 # Sweep allowable suspension compression
 s = np.arange(0.0, 0.051, 0.005)
@@ -37,8 +37,8 @@ idx = np.argmin(np.abs(s - target_s))
 K_pitch_target = K_pitch[idx]
 K_roll_target = K_roll[idx]
 
-print(f"Pitch stiffness @ 25 mm : {K_pitch_target:,.1f} N/m")
-print(f"Roll stiffness  @ 25 mm : {K_roll_target:,.1f} N/m")
+print(f"Pitch stiffness @ 25 mm : {K_pitch_target:.1f} N/m")
+print(f"Roll stiffness  @ 25 mm : {K_roll_target:.1f} N/m")
 
 
 # Plot

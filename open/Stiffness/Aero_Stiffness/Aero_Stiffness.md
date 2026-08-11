@@ -2,13 +2,13 @@
 layout: base
 ---
 
-# Pitch Stiffness
+# Aero Stiffness
 
 ## 簡介
 
-當車輛進行直線加速時，慣性力會作用於車輛質心（Center of Gravity, CG），產生一個使車身繞質心旋轉的俯仰力矩（Pitch Moment）。此力矩會導致前懸吊拉伸、後懸吊壓縮，從而產生俯仰角（Pitch Angle, $\theta$）。
+當車輛進行加速時，慣性力會作用於車輛質心（Center of Gravity, CG），產生一個使車身繞質心旋轉的力矩。
 
-Pitch Angle會影響空力攻角，為了避免空力失效我們需要將俯仰角控制在設計目標（$\theta_{\text{target}} = 1.5^\circ$）以內，懸吊系統必須具備足夠的俯仰剛度（Pitch Stiffness, $K$）。
+車身姿態改變會影響空力攻角，為了避免空力失效我們需要將俯仰角控制在設計目標（$\theta_{\text{target}} = 1.5^\circ$）以內，懸吊系統必須具備足夠的剛度。
 
 ## 參數
 | 變數名稱 | 物理意義 | 單位 |
@@ -18,25 +18,29 @@ Pitch Angle會影響空力攻角，為了避免空力失效我們需要將俯仰
 | `h` | 重心高度 ($h$) | $m$ |
 | `L` | 軸距 ($L$) | $m$ |
 | `theta` | 容許俯仰角度 ($\theta$) | $rad$ |
+| `phi` | 容許側傾角度 ($\phi$) | $rad$ |
 | `s` | 懸吊行程位移 ($s$) | $m$ |
 | `F` | 單軸等效垂直力 ($F$) | $N$ |
 | `K` | 單側所需垂直剛度 ($K$) | $N/m$ |
+| `K_roll` | 單側側傾所需垂直剛度 ($K$) | $N/m$ |
 
 ## 計算
 
 ### 1. 縱向慣性力與俯仰力矩
 
-當車輛以加速度 $a\cdot g$ 加速時，作用於質心的縱向慣性力 $F_x$ ，其中加速度設定為極限的x方向加速度。
+當車輛以加速度 $a\cdot g$ 加速時，作用於質心的縱向慣性力，其中加速度設定為極限的加速度。
 
-$$F_x = m \cdot a \cdot g$$
+$$F_x = m \cdot a_x \cdot g$$
+$$F_y = m \cdot a_y \cdot g$$
 
 此作用力相對於底盤旋轉中心（距離為質心高度 $h$）產生俯仰力矩 $M$：
 
-$$M = F_x \cdot h = m \cdot a \cdot g \cdot h$$
+$$M = F_x \cdot h = m \cdot a_x \cdot g \cdot h$$
+$$M_roll = F_y \cdot h = m \cdot a_y \cdot g \cdot h$$
 
 ### 2. 軸位置的受力與垂直位移
 
-則俯仰力矩 $M$ 分配到前/後軸產生的垂直負載量 $F$ 如下，單側力矩由前後兩側的彈簧力量組成，力臂為 $L/2$
+則俯仰力矩 $M$ 分配到兩側產生的垂直負載量 $F$ 如下，單側力矩由前後兩側的彈簧力量組成，力臂為 $L/2$
 
 $$M = F/2 \cdot \left(\frac{L}{2}\right) \implies F = \frac{2M}{\frac{L}{2}} = \frac{M}{L}$$
 
@@ -46,7 +50,7 @@ $$s = \left(\frac{L}{2}\right) \cdot \theta$$
 
 ### 3. 所需俯仰剛度推導
 
-假設前後懸吊系統在該自由度下之幾何對稱，總位移量由雙側懸吊共同承擔，剛度定義為單位位移所需的力：
+假設懸吊系統在該自由度下之幾何對稱，總位移量由雙側懸吊共同承擔，剛度定義為單位位移所需的力：
 
 $$K = \frac{F}{s}$$
 
@@ -59,8 +63,8 @@ $$K = \frac{\frac{M}{L}}{\left(\frac{L}{2} \cdot \theta\right)} = \frac{2M}{L^2 
 ## 結果
 
 <div style="text-align: center;">
-<img src="Pitch_Stiffness_Requirement.png" alt="image" width="800">
+<img src="Stiffness_Requirement.png" alt="image" width="800">
 </div>
 
 
-如上圖計算結果可以得知前後懸吊pitch的剛性下限需求，真實車輛的heave剛性前後不同，這邊計算出來的剛性是最低下限值。
+如上圖計算結果可以得知前後懸吊pitch與roll的剛性下限需求，真實車輛的heave&roll剛性前後不同，這邊計算出來的剛性是最低下限值。

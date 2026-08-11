@@ -4,7 +4,7 @@ from pathlib import Path
 
 
 # Parameters
-Ks = 50000.0      # Suspension stiffness (N/m)
+Ks = 30000.0      # Suspension stiffness (N/m)
 Kt = 100000.0     # Tire stiffness (N/m)
 
 # Chassis stiffness sweep
