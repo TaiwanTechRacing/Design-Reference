@@ -1,16 +1,16 @@
-# Stiffness
+# 懸吊彈簧剛性與自然頻率評估
 
 ## 懸吊行程的剛性限制
 [Compressed travel](Compressed_travel/Compressed_travel.md)
- : 用懸吊行程的最低剛性下限制。注意這邊沒有考慮懸吊機構影響單純分析前後軸剛性
+ : 首先用懸吊行程的最低剛性下限制。注意這邊沒有考慮懸吊機構影響單純分析前後軸剛性
 
 
 ## 空力的pitch 行程限制
 [Aero Stiffness](Aero_Stiffness/Aero_Stiffness.md)
- : 空力允許姿態變化找出最低剛性限制，這個限制通常會比上一個行程限制更限縮。
+ : 接下來空力允許姿態變化找出最低剛性限制，這個限制通常會比上一個行程限制更限縮。
 
 ## 人體頻率限制
-這部分沒有強制限制，但貼出來讓大家體諒一下車手的辛苦
+然後看看頻率對車手的影響。這部分沒有強制限制，但貼出來讓大家體諒一下車手的辛苦
 
 ![alt text](image.png)
 
@@ -19,14 +19,14 @@
 
 ## 輪胎環模態頻率
 [Tire Ring Mode](Tire_Ring_Mode/Tire_Ring_Mode.md) : 
-分析不同模態階數的頻率，理論上我們需要避開。但基本上結果都在和自然頻率差太多算是做好玩用的。
+然後分析不同模態階數的頻率，理論上我們需要避開。但基本上結果都在和自然頻率差太多算是做好玩用的。
 
 ## 自然頻率轉換
-[Frequency Stiffness](Frequency_Stiffness/Frequency_Stiffness.md) : 前面有些有頻率和剛性的分析統一一下單位，把行程需求與空力要求的剛性需求轉到自然頻率進行分析，方便之後和輪胎自然頻率比較
+[Frequency Stiffness](Frequency_Stiffness/Frequency_Stiffness.md) : 前面有頻率和剛性的分析統一一下單位，把行程需求與空力要求的剛性需求轉到自然頻率進行分析，方便之後和輪胎自然頻率比較
 
 ## 輪胎剛性影響
 [Tire Stiffness](Tire_Stiffness/Tire_Stiffness.md) : 
-輪胎剛性影響的ride rate同時分析，看看輪胎造成的影響與如果要符合預期的話剛性要提升多少。
+在限制範圍內把剛性拉到最低，然後加上輪胎剛性影響的ride rate同時分析，看看輪胎造成的影響與如果要符合預期的話懸吊剛性要提升多少。
 
 ## 簧下質量與自然頻率
 [Frequency mass](Frequency_mass/Frequency_mass.md) : 確定簧上下自然頻率差異足夠大，順便看一下實際簧下質量與設計數值有誤差的話的影響。

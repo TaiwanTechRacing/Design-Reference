@@ -4,6 +4,8 @@ layout: base
 
 # ISO 8608 路面不平度產生與車輛動態激振頻譜分析說明
 
+[Download Code](PSD.m)
+
 ## 簡介
 
 針對 ISO 8608 標準之路面高程輪廓生成（Road Profile Generation）、車輛行駛速度軌跡（Speed Trace）統計分析、時間-空間頻率轉換，以及結合速度概率分佈之加權激振能量頻譜。

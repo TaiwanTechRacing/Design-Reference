@@ -4,6 +4,8 @@ layout: base
 
 # 車輛俯仰與側傾剛度（Pitch / Roll Stiffness）計算與分析說明
 
+[Download Code](Compressed_travel.py)
+
 ## 簡介
 
 規則中有提到懸吊行程5cm的限制，我們設定5cm為總懸吊行程向上向下各2.5cm。不能不能讓車輛在最大加速度時直接觸底懸吊行程因此需要訂下限制。另外順便分析行程與車輛姿態角度關係。
@@ -74,11 +76,9 @@ $$\theta_{\text{deg}} = \text{rad2deg}\left(\theta\right)$$
 
 ## 結果
 
-
 <div style="text-align: center;">
 <img src="Compressed_travel.png" alt="image" width="800">
 </div>
-
 
 根據懸吊行程估算出來的最低剛性限制如上，此限制通常可能比空力的攻角限制小。需取較大值的當作下限制
 

@@ -1,5 +1,7 @@
 # Quarter-Car 懸吊自然頻率分析 (Natural Frequency vs. Spring Stiffness)
 
+[Download Code](Frequency_Stiffness.py)
+
 ## 簡介
 將剛性需求轉換成自然頻率方便檢查我們設定的數值是否合理，另外也與輪胎自然頻率比較看有沒有超過3~5倍以上
 

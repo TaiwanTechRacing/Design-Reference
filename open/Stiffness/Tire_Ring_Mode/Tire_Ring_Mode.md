@@ -4,6 +4,8 @@ layout: base
 
 # 輪胎環形振動模態（Tire Ring Mode Frequencies）計算與分析說明
 
+[Download Code](Tire_Ring_Mode.py)
+
 ## 簡介
 
 將輪胎簡化為一個具有彈性的連續圓環結構。當環發生形變時，其位能主要儲存於彎曲應變能中，而動能則由環的質量分佈決定。利用古典彈性環理論（Classical Ring Theory），分析輪胎結構在面內彎曲（In-plane bending）下的各階自然頻率與振型。

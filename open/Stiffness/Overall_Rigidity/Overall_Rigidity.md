@@ -4,6 +4,8 @@ layout: base
 
 # 車架剛性與等效懸吊剛度（Overall Rigidity & Equivalent Stiffness）計算與分析說明
 
+[Download Code](Overall_Rigidity.py)
+
 ## 一、 簡介與物理機制
 
 車輛懸吊系統並非直接固定於絕對剛性的牆面上，而是安裝於具有彈性變形能力的車架（Chassis/Frame）上，並透過彈性輪胎（Tire）接觸地面。

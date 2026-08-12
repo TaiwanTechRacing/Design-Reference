@@ -4,6 +4,8 @@ layout: base
 
 # Aero Stiffness
 
+[Download Code](Aero_Stiffness.py)
+
 ## 簡介
 
 當車輛進行加速時，慣性力會作用於車輛質心（Center of Gravity, CG），產生一個使車身繞質心旋轉的力矩。
@@ -11,6 +13,9 @@ layout: base
 車身姿態改變會影響空力攻角，為了避免空力失效我們需要將俯仰角控制在設計目標（$\theta_{\text{target}} = 1.5^\circ$）以內，懸吊系統必須具備足夠的剛度。
 
 ## 參數
+
+以下為計算中所採用的物理量與符號說明：
+
 | 變數名稱 | 物理意義 | 單位 |
 | :--- | :--- | :--- |
 | `m` | 車輛總質量 ($m$) | $kg$ |
