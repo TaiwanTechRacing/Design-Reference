@@ -2,10 +2,10 @@
 Private/
 .obsidian/
 
-# 忽略的檔案種類
+# 忽略的檔案種類 (避免太多數據和雜亂資料)
 *.mat
 *.zip
-
+*.csv
 # 編譯或暫存檔
 *.log
 *.tmp
