@@ -11,6 +11,8 @@
 
 [Dynamic](open/Dynamic/Dynamic.md) : 懸吊動態模型評估
 
-## 煞車與加速
+## 煞車與傳動加速
 
 [Brake](open/Brake/Brake.md) : 煞車系統設計
+
+[Trans acc](open/Trans_acc/Acc.md) : 傳動與加速
