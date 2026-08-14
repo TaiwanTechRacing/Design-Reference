@@ -7,13 +7,16 @@
 
 ## 懸吊
 
-[Stiffness](open/Stiffness/Stiffness.md) : 懸吊剛性分析
+[懸吊剛性](open/Stiffness/Stiffness.md) : 懸吊剛性分析
 
-[Dynamic](open/Dynamic/Dynamic.md) : 懸吊動態模型評估
+[懸吊動態](open/Dynamic/Dynamic.md) : 懸吊動態模型評估
 
 ## 煞車與傳動加速
 
-[Brake](open/Brake/Brake.md) : 煞車系統設計
+[煞車](open/Brake/Brake.md) : 煞車系統設計
 
-[Trans acc](open/Trans_acc/Acc.md) : 傳動與加速
+[傳動與加速](open/Trans_acc/Acc.md) : 齒輪箱設計
 
+## 更多
+
+[電力與空力](open/other/Other.md) : 更多其他組的分析

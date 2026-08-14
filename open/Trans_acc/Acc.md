@@ -52,6 +52,11 @@
 
 ## 更多工具
 
+|齒輪系幾何生成視覺化|齒輪設計界面|
+|:-:|:-:|
+|![alt text](image.png)|![alt text](image-1.png)|
+
+
 1. [齒輪設計界面](Gear_Designer/Gear_Design_Interface.md) : 請將```Gear_Designer```資料夾整包下載並使用```Gear_Design_Interface.py```啟動
-2. [行星齒輪系幾何生成與視覺化](Gear_system_Designer/gear_sys.md) : 請將```Gear_system_Designer```資料夾整包下載並使用```Gear_Layout_Preview.m```啟動
+2. [齒輪系幾何生成視覺化](Gear_system_Designer/gear_sys.md) : 請將```Gear_system_Designer```資料夾整包下載並使用```Gear_Layout_Preview.m```啟動
 3. [齒輪傳動計算表](Gear_Transmission_Sheet.md) : [點擊下載](Gear%20train%20calculation%20table.xlsx)

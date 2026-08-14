@@ -1,4 +1,10 @@
+---
+layout: base
+---
+
 # Python 齒輪設計與視覺化工具
+
+![alt text](image.png)
 
 本程式是一個使用 **Python** 開發的 **漸開線齒輪設計與視覺化工具**，整合了：
 
