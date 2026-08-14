@@ -6,10 +6,6 @@ layout: base
 
 [Download Code](Brake_hydraulic_pressure.py)
 
-## 簡介
-
-目標計算在目標工作壓力下軟管的每米體積膨脹量（$\text{mm}^3/\text{m}$），作為液壓系統建模的依據。
-
 ## 參數
 
 以下為計算中所採用的物理量與符號說明：

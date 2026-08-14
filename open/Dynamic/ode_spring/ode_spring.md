@@ -8,12 +8,6 @@ layout: base
 
 [Download Code](ode_spring.py) : python
 
-## 簡介
-
-本分析旨在探討 **雙自由度（2-DOF）無阻尼四分之一車（Quarter-Car）懸吊系統** 在給定初始位移條件下的自由振動響應，並使用具備自適應步長控制的高階數值積分器 **Runge-Kutta 45（Python `scipy.integrate.solve_ivp` 的 RK45 與 MATLAB 的 `ode45`）** 進行求解。
-
-本模型透過將系統初始化於不平衡狀態（初始時賦予簧下質量 $0.025\text{ m}$ 的初始位移），觀測簧上質量（Sprung Mass, 車體）與簧下質量（Unsprung Mass, 車輪）之間的動態耦合效應。同時，經由監測系統總機械能與能量誤差百分比，驗證高階 Runge-Kutta 算法在保守力場多自由度系統中的高精度與數值穩定性。
-
 ## 參數
 
 以下為計算中所採用的物理量與符號說明：

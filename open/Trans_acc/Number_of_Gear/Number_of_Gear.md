@@ -6,9 +6,6 @@ layout: base
 
 [Download Code](Number_of_Gear.py)
 
-## 簡介
-
-本分析旨在針對 **行星齒輪機構（Planetary Gear Mechanism）** 進行相鄰行星齒輪間的**幾何干涉（Geometric Interference）**與**最大裝配數量極限**驗算。
 
 ## 參數
 

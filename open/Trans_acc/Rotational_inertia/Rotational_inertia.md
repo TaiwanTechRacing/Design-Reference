@@ -7,10 +7,6 @@ layout: base
 
 [Download Code](Rotational_inertia.py)
 
-## 簡介
-
-**複式行星齒輪箱機構（Compound Planetary Gearbox）** 動力學上的等效轉動慣量（Equivalent Mass / Rotational Inertia）數學模型。
-
 ## 參數
 
 以下為材料特性、齒輪幾何尺寸與系統配置之參數說明：

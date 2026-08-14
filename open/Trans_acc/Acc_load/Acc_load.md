@@ -6,10 +6,6 @@ layout: base
 
 [Download Code](Acc_load.py)
 
-## 簡介
-
-當車輛向前加速時，慣性力（Inertial Force）作用於車輛重心（CG），產生使車身繞 Y 軸仰俯的慣性力矩（Pitch Moment）。這會導致前軸正向載荷（Front Normal Load）轉移至後軸（Rear Normal Load）。
-
 ## 參數
 
 以下為計算中採用的物理量與符號說明：

@@ -6,12 +6,6 @@ layout: base
 
 [Download Code](Analytical_Numerical_Simulation.py)
 
-## 簡介
-
-分析一下單純的震動，比較**解析解（Analytical Solution）**與**顯式歐拉法（Explicit Euler Method）數值解**之間的準確度與誤差發散特性。
-
-顯式歐拉法為簡單的一階數值積分方法，但在無阻尼振動系統中，由於該演算法無法保持物理系統的能量守恆（Energy Conservation），隨著時間推移會產生振幅漸增的數值發散現象。但是在我們建立複雜的懸吊模型時我們很有可能不再有解析解出現，所以我們需要看看誤差到底差多少是否可以接受
-
 ## 參數
 
 以下為計算中所採用的物理量與符號說明：

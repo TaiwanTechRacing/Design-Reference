@@ -6,10 +6,6 @@ layout: base
 
 [Download Code](Tire_Ring_Mode.py)
 
-## 簡介
-
-將輪胎簡化為一個具有彈性的連續圓環結構。當環發生形變時，其位能主要儲存於彎曲應變能中，而動能則由環的質量分佈決定。利用古典彈性環理論（Classical Ring Theory），分析輪胎結構在面內彎曲（In-plane bending）下的各階自然頻率與振型。
-
 ## 參數
 
 以下為計算中所採用的物理量與符號說明：

@@ -6,10 +6,6 @@ layout: base
 
 [Download Code](Gear_rate.py)
 
-## 簡介
-
-根據**輪胎抓地力極限（Traction Limit）**與**目標極速（Top Speed Target）**，推導出最佳的傳動減速比（Gear Ratio, $Z$）。
-
 ## 參數
 
 以下為計算中所採用的物理量與符號說明：
