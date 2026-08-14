@@ -1,3 +1,7 @@
+---
+layout: base
+---
+
 # 懸吊動態分析
 
 ## [解析解與顯式歐拉數值解比較](Analytical_Numerical_Simulation/Analytical_Numerical_Simulation.md)

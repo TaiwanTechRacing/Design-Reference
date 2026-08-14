@@ -1,3 +1,7 @@
+---
+layout: base
+---
+
 # 懸吊彈簧剛性與自然頻率評估
 
 ## [懸吊行程的剛性限制](Compressed_travel/Compressed_travel.md)

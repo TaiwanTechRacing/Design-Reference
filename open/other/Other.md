@@ -1,3 +1,7 @@
+---
+layout: base
+---
+
 # 空力與電力
 
 ## [電池](Battery_capacity/Battery_capacity.md)

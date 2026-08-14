@@ -1,3 +1,7 @@
+---
+layout: base
+---
+
 # 煞車
 
 ## [前後煞車比](Brake_ratio/Brake_ratio.md)

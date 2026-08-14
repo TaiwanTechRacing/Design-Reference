@@ -1,3 +1,7 @@
+---
+layout: base
+---
+
 # 傳動系統與加速
 
 ## [減速比計算](Gear_rate/Gear_rate.md)
