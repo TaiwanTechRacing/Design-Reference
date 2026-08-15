@@ -56,13 +56,10 @@ layout: base
 
 ## 更多工具
 
-|齒輪系幾何生成視覺化|齒輪設計界面|
-|:-:|:-:|
-|<div style="text-align: center;">
-<img src="image.png" alt="image" width="400">
-</div>|<div style="text-align: center;">
-<img src="image-1.png" alt="image" width="400">
-</div>|
+<div style="display: flex; justify-content: center; gap: 10px;">
+  <img src="image.png" alt="image" width="300">
+  <img src="image-1.png" alt="image" width="500">
+</div>
 
 
 1. [齒輪設計界面](Gear_Designer/Gear_Design_Interface.md) : 請將```Gear_Designer```資料夾整包下載並使用```Gear_Design_Interface.py```啟動
