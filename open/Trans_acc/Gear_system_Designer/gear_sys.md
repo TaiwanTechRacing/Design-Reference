@@ -67,7 +67,12 @@ ad = [10,10,10,tip_diameter(M, Tr)];
 * 行星齒輪系組合圖
 
 ### 齒輪系簡圖
-![alt text](img/image-1.png)
+
+<div style="text-align: center;">
+<img src="img/image-1.png" alt="image" width="800">
+</div>
+
+
 $$
 R = \frac{T M}{2}
 $$
@@ -99,7 +104,10 @@ $$
 兩顆齒輪共用同一中心。
 
 ### 各齒輪草圖生成
-![alt text](img/image.png)
+
+<div style="text-align: center;">
+<img src="img/image.png" alt="image" width="800">
+</div>
 
 生成每一顆齒輪的 **齒形草圖**。
 
@@ -110,7 +118,11 @@ $$
 * 軸孔
 
 ### 齒輪系組合圖
-![alt text](img/image-2.png)
+
+<div style="text-align: center;">
+<img src="img/image-2.png" alt="image" width="800">
+</div>
+
 可用於：
 
 * CAD設計前檢查
