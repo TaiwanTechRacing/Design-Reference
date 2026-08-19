@@ -1,7 +1,15 @@
+import math
+import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 from pathlib import Path
+import sys
 
+sys.path.append(str(Path(__file__).resolve().parent.parent.parent))
+
+from load_data import ParameterLoader
+
+param = ParameterLoader().load("data.xlsx")
 
 # =========================================================
 # Output path
@@ -17,12 +25,12 @@ output_path = OUTPUT_DIR / "planetary_gear_number_check.png"
 # =========================================================
 
 # 以下參數請依你的齒輪資料設定
-M = 0.8       # Module [mm]
+M = param.M_gear       # Module [mm]
 
-Ts = 20       # Sun gear teeth
-Tp1 = 58      # Planet gear teeth
+Ts = param.Ts       # Sun gear teeth
+Tp1 = param.Tp1      # Planet gear teeth
 
-n = 3         # Number of planetary gears
+n = param.N_gear         # Number of planetary gears
 
 
 # =========================================================

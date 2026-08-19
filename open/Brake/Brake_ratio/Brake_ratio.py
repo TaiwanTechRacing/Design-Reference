@@ -1,6 +1,15 @@
+import math
+import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 from pathlib import Path
+import sys
+
+sys.path.append(str(Path(__file__).resolve().parent.parent.parent))
+
+from load_data import ParameterLoader
+
+param = ParameterLoader().load("data.xlsx")
 
 OUTPUT_DIR = Path(__file__).parent
 OUTPUT_DIR.mkdir(exist_ok=True)
@@ -10,15 +19,15 @@ OUTPUT_DIR.mkdir(exist_ok=True)
 g = 9.81
 
 # Vehicle parameters
-m = 320.0          # Vehicle mass (kg)
+m = param.m          # Vehicle mass (kg)
 
-rf = 0.50          # Front weight distribution
-rr = 0.50          # Rear weight distribution
+rf = param.lr/param.L         # Front weight distribution
+rr = param.lf/param.L          # Rear weight distribution
 
-h = 0.3           # CG height (m)
-L = 1.53           # Wheelbase (m)
+h = param.h_cog           # CG height (m)
+L = param.L           # Wheelbase (m)
 
-mu = 1.7           # Longitudinal friction coefficient
+mu = param.mu_w           # Longitudinal friction coefficient
 
 # 計算
 # =====================================

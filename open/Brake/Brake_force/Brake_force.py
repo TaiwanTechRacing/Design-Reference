@@ -1,6 +1,15 @@
+import math
+import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 from pathlib import Path
+import sys
+
+sys.path.append(str(Path(__file__).resolve().parent.parent.parent))
+
+from load_data import ParameterLoader
+
+param = ParameterLoader().load("data.xlsx")
 
 OUTPUT_DIR = Path(__file__).parent
 OUTPUT_DIR.mkdir(exist_ok=True)
@@ -11,29 +20,29 @@ OUTPUT_DIR.mkdir(exist_ok=True)
 
 g = 9.81
 
-m = 321 # 車重kg
+m = param.m # 車重kg
 
-mu_w = 1.7
+mu_w = param.mu_w
 
-r_w = 0.203          # m
-r_disc_o = 0.21      # m
-d_gap = 0.02         # m
+r_w = param.rw          # m
+r_disc_o = param.r_disc_o      # m
+d_gap = param.d_gap         # m
 
-mu_pad = 0.55
+mu_pad = param.mu_pad
 
-D_mc_f = 12e-3       # m
-D_mc_r = 12e-3       # m
+D_mc_f = param.D_mc_f       # m
+D_mc_r = param.D_mc_r       # m
 
-D_caliper_f = 34e-3  # m
-D_caliper_r = 34e-3  # m
+D_caliper_f = param.D_caliper_f  # m
+D_caliper_r = param.D_caliper_r  # m
 
-F_driver = 500.0     # N
+F_driver = param.F_driver     # N
 
-balance_bar = 0.75
-PR = 1.45
+balance_bar = param.balance_bar 
+PR = param.PR
 
-N_caliper_f = 2
-N_caliper_r = 2
+N_caliper_f = param.N_caliper_f
+N_caliper_r = param.N_caliper_r
 
 # =====================================
 # Pedal Force

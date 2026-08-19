@@ -1,5 +1,14 @@
+import pandas as pd
 import numpy as np
+import matplotlib.pyplot as plt
+from pathlib import Path
+import sys
 
+sys.path.append(str(Path(__file__).resolve().parent.parent.parent))
+
+from load_data import ParameterLoader
+
+param = ParameterLoader().load("data.xlsx")
 
 # =========================================================
 # Parameters
@@ -8,47 +17,47 @@ import numpy as np
 g = 9.81
 
 # Vehicle
-m = 321.0              # Vehicle mass [kg]
+m = param.m              # Vehicle mass [kg]
 
 # Tire
-mu_w = 1.7             # Tire friction coefficient
-r_w = 0.203            # Wheel radius [m]
+mu_w = param.mu_w             # Tire friction coefficient
+r_w = param.rw            # Wheel radius [m]
 
 # Wheel rotational inertia
-I = 0.05               # Wheel equivalent inertia [kg*m^2]
+I = param.Iw               # Wheel equivalent inertia [kg*m^2]
 
 # Starting drivetrain torque
-M_start = 0.90         # Starting torque [Nm]
+M_start = param.M_start         # Starting torque [Nm]
 
 # Rolling resistance
-Crr = 0.01
+Crr = param.Crr
 
 # Vehicle starting resistance
-mu_s = 0.02
+mu_s = param.mu_s
 
 # Slope
 theta_slope = 10.0      # [deg]
 
 # Aerodynamics
-h = 0.7                # Vehicle height [m]
-w = 0.7                # Vehicle width [m]
+h = param.h                # Vehicle height [m]
+w = param.w                # Vehicle width [m]
 
-C = 1.18                # Drag coefficient
+C = param.Cd                # Drag coefficient
 rho = 1.225            # Air density [kg/m^3]
 
 eta_air = 1.81e-5      # Air dynamic viscosity [Pa*s]
 
 # Vehicle speed
-v = 100.0              # [km/h]
+v = param.target_v              # [km/h]
 
 # Drivetrain efficiency
-eta = 0.9
+eta = param.eta
 
 # Safety factor
-SF = 1.2
+SF = 1.1
 
 # Maximum motor torque
-T_motor_max = 21    # [Nm]
+T_motor_max = param.T_motor    # [Nm]
 
 
 # =========================================================

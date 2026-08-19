@@ -1,7 +1,14 @@
+import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 from pathlib import Path
+import sys
 
+sys.path.append(str(Path(__file__).resolve().parent.parent.parent))
+
+from load_data import ParameterLoader
+
+param = ParameterLoader().load("data.xlsx")
 
 # =========================================================
 # Output path
@@ -19,11 +26,11 @@ plot_path = OUTPUT_DIR / "normal_load_vs_acceleration.png"
 g = 9.81
 
 # 以下參數請依你的車輛設定
-m = 321.0          # Vehicle mass [kg]
-l = 1.53           # Wheelbase [m]
-l_f = 0.765        # CG to front axle [m]
-h_cog = 0.3      # CG height [m]
-mu_w = 1.2         # Tire friction coefficient
+m = param.m          # Vehicle mass [kg]
+l = param.L           # Wheelbase [m]
+l_f = param.lf        # CG to front axle [m]
+h_cog = param.h_cog      # CG height [m]
+mu_w = param.mu_w         # Tire friction coefficient
 
 
 # Rear axle distance

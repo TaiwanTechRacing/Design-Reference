@@ -65,7 +65,7 @@ $$\text{Relative Error} = \frac{\vert{}x_{num}(t) - x_{analytical}(t)\vert{}}{\v
 <img src="Analytical_vs_Explicit_Euler.png" alt="image" width="800">
 </div>
 
-顯式歐拉法在長時域模擬中會不斷向系統注入非物理性質的數值能量（Numerical Energy Generation），導致數值解振幅隨時間呈線性或指數型增長。
+顯式歐拉法在長時域模擬中會不斷向系統注入非物理性質的數值能量（Numerical Energy Generation）
 
 <div style="text-align: center;">
 <img src="Explicit_Euler_Error.png" alt="image" width="800">

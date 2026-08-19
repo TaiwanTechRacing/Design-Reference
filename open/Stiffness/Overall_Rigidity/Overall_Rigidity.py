@@ -1,11 +1,17 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from pathlib import Path
+import sys
 
+sys.path.append(str(Path(__file__).resolve().parent.parent.parent))
+
+from load_data import ParameterLoader
+
+param = ParameterLoader().load("data.xlsx")
 
 # Parameters
-Ks = 30000.0      # Suspension stiffness (N/m)
-Kt = 100000.0     # Tire stiffness (N/m)
+Ks = param.Ks     # Suspension stiffness (N/m)
+Kt = param.Kt     # Tire stiffness (N/m)
 
 # Chassis stiffness sweep
 ratio = np.arange(1, 21)

@@ -1,7 +1,13 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from pathlib import Path
+import sys
 
+sys.path.append(str(Path(__file__).resolve().parent.parent.parent))
+
+from load_data import ParameterLoader
+
+param = ParameterLoader().load("data.xlsx")
 
 
 OUTPUT_DIR = Path(__file__).parent
@@ -9,13 +15,13 @@ OUTPUT_DIR = Path(__file__).parent
 
 # Parameters
 # =====================================
-m_total = 321 / 4      # Total quarter-car mass (kg)
+m_total = param.m / 4      # Total quarter-car mass (kg)
 
-Ks = 30000.0           # Spring stiffness (N/m)
-Kt = 100000.0          # Tire stiffness (N/m)
-MR = 1              # Motion ratio
+Ks = param.Ks           # Spring stiffness (N/m)
+Kt = param.Kt          # Tire stiffness (N/m)
+MR = param.MR              # Motion ratio
 
-target_ratio = 15/m_total# 目前簧下比
+target_ratio = param.mu/m_total# 目前簧下比
 print(f"Target unsprung mass ratio: {target_ratio:.2f}")
 
 mu_ratio = np.linspace(0.05, 0.50, 500)

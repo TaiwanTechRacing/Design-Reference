@@ -1,10 +1,17 @@
 import pandas as pd
 import numpy as np
-from pathlib import Path
 import matplotlib.pyplot as plt
+from pathlib import Path
+import sys
+
+sys.path.append(str(Path(__file__).resolve().parent.parent.parent))
+
+from load_data import ParameterLoader
+
+param = ParameterLoader().load("data.xlsx")
 
 SF = 1.5
-eta = 1
+eta = param.eta
 
 # === 讀取 csv ===
 

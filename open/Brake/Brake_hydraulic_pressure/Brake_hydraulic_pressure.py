@@ -1,7 +1,15 @@
-import numpy as np
+import math
 import pandas as pd
+import numpy as np
 import matplotlib.pyplot as plt
 from pathlib import Path
+import sys
+
+sys.path.append(str(Path(__file__).resolve().parent.parent.parent))
+
+from load_data import ParameterLoader
+
+param = ParameterLoader().load("data.xlsx")
 
 OUTPUT_DIR = Path(__file__).resolve().parent
 
@@ -18,8 +26,8 @@ df = pd.read_csv(csv_path)
 print("\nLoaded brake line data:")
 print(df)
 
-# Evaluate at 5.67 MPa
-pressure_target = 5.67# 目標壓力
+
+pressure_target = param.P_brake# 目標壓力
 
 # 計算
 # =====================================

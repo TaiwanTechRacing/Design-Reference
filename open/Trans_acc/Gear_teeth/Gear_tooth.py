@@ -1,5 +1,15 @@
 import math
 import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+from pathlib import Path
+import sys
+
+sys.path.append(str(Path(__file__).resolve().parent.parent.parent))
+
+from load_data import ParameterLoader
+
+param = ParameterLoader().load("data.xlsx")
 
 
 # =========================================================
@@ -7,11 +17,11 @@ import pandas as pd
 # =========================================================
 
 # Parameters
-M = 0.8          # 製作模數 [mm]
-z = 12         # 目標齒比
-T_min = 20       # 最小齒數
-D_max = 110      # 最大軸距 [mm]
+M = param.M_gear          # 製作模數 [mm]
+z = param.z_gear         # 目標齒比
+D_max = param.D_max      # 齒輪箱直徑
 
+T_min = 20       # 最小齒數
 
 # =========================================================
 # 總齒數限制

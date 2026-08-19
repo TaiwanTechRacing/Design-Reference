@@ -1,18 +1,27 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from pathlib import Path
+import sys
+
+sys.path.append(str(Path(__file__).resolve().parent.parent.parent))
+
+from load_data import ParameterLoader
+
+param = ParameterLoader().load("data.xlsx")
 
 # Constants
 g = 9.81
 
 # Vehicle data
-m = 260          # kg
-ax = 1.7         # Longitudinal acceleration (g)
-ay = 1.7         # Lateral acceleration (g)
+m = param.m          # kg
+ax = param.ax         # Longitudinal acceleration (g)
+ay = param.ay         # Lateral acceleration (g)
 
-h = 0.3         # CG height (m)
-L = 1.53         # Wheelbase (m)
-t = 1.265         # Track width (m)
+target_s = param.sus_travel
+
+h = param.h_cog         # CG height (m)
+L = param.L         # Wheelbase (m)
+t = param.t         # Track width (m)
 
 # Sweep allowable suspension compression
 s = np.arange(0.0, 0.051, 0.005)
@@ -29,8 +38,7 @@ K_pitch = Fx / (s)
 K_roll = Fy / (s)
 
 
-# 規則最低行程
-target_s = 0.025
+
 
 idx = np.argmin(np.abs(s - target_s))
 

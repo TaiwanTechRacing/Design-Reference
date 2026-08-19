@@ -1,16 +1,25 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from pathlib import Path
+import sys
+
+sys.path.append(str(Path(__file__).resolve().parent.parent.parent))
+
+from load_data import ParameterLoader
+
+param = ParameterLoader().load("data.xlsx")
 
 OUTPUT_DIR = Path(__file__).parent
 
 # Parameters
-m = 260 / 2      # Quarter-car sprung mass (kg)
-# Spring stiffness range
-k = np.linspace(1000, 70000, 1000)    # N/m
+m = param.m/2      # Quarter-car sprung mass (kg)
 
-# pitch 空力要求, pitch 行程要求, roll 空力要求, roll 行程要求
-highlight_k = [42500, 34000,47700, 41000,]
+highlight_k = [param.K_roll,param.K_heave]
+
+# Spring stiffness range
+k = np.linspace(10000, 100000, 5000)    # N/m
+
+
 
 # 計算
 #=====================================

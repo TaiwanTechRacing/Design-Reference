@@ -1,6 +1,14 @@
+import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 from pathlib import Path
+import sys
+
+sys.path.append(str(Path(__file__).resolve().parent.parent.parent))
+
+from load_data import ParameterLoader
+
+param = ParameterLoader().load("data.xlsx")
 
 OUTPUT_DIR = Path(__file__).parent
 OUTPUT_DIR.mkdir(exist_ok=True)
@@ -11,24 +19,25 @@ OUTPUT_DIR.mkdir(exist_ok=True)
 g = 9.81
 
 # Vehicle
-m = 320.0                  # Vehicle mass [kg]
+m = param.m                  # Vehicle mass [kg]
 
-l = 1.53                   # Wheelbase [m]
-l_f = 0.765                # CG to front axle [m]
+l = param.L                   # Wheelbase [m]
+l_f = param.lf                # CG to front axle [m]
 l_r = l - l_f              # CG to rear axle [m]
 
-h_cog = 0.3              # CG height [m]
+h_cog = param.h_cog              # CG height [m]
 
 # Tire
-mu_w = 1.2                 # Tire friction coefficient
-r_w = 0.203                # Wheel radius [m]
+r_w = param.rw                # Wheel radius [m]
 
-# Target vehicle speed
-v_target = 110.0           # [km/h]
+mu_w = min(param.a_acc,param.mu_w)
+# Target
+target_v = param.target_v          # [km/h]
+a_max = mu_w * g
 
 # Motor
-T_motor_max = 21        # Maximum motor torque [Nm]
-RPM_motor_max = 16000.0    # Maximum motor RPM
+T_motor_max = param.T_motor        # Maximum motor torque [Nm]
+RPM_motor_max = param.RPM_motor    # Maximum motor RPM
 
 
 # ============================================================
@@ -52,7 +61,7 @@ print(
 # Tire traction limit
 # ============================================================
 
-a_max = mu_w * g
+
 
 print(
     f"\nMaximum acceleration : "
@@ -162,11 +171,11 @@ print(
 # ============================================================
 
 # km/h -> m/s
-v_target_ms = v_target / 3.6
+target_v_ms = target_v / 3.6
 
 
 # Wheel angular velocity
-omega_w_max = v_target_ms / r_w
+omega_w_max = target_v_ms / r_w
 
 
 # rad/s -> RPM
@@ -204,7 +213,7 @@ print(
 # =========================================================
 
 # Vehicle speed range
-v_max_plot = v_target/3.6 * 1.1
+v_max_plot = target_v/3.6 * 1.1
 v_array = np.linspace(0, v_max_plot, 150)
 
 # Convert vehicle speed -> wheel RPM
@@ -252,10 +261,10 @@ plt.axhline(
 
 # Target vehicle speed
 plt.axvline(
-    v_target ,
+    target_v ,
     linestyle="--",
     linewidth=1.5,
-    label=f"Target Speed = {v_target:.1f} km/h"
+    label=f"Target Speed = {target_v:.1f} km/h"
 )
 
 plt.xlabel("Vehicle Speed (km/h)")

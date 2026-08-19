@@ -1,6 +1,13 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from pathlib import Path
+import sys
+
+sys.path.append(str(Path(__file__).resolve().parent.parent.parent))
+
+from load_data import ParameterLoader
+
+param = ParameterLoader().load("data.xlsx")
 
 # ==========================================================
 # Parameters
@@ -8,8 +15,8 @@ from pathlib import Path
 
 g = 9.81
 
-m = 321.0          # kg
-mu = 1.7
+m = param.m          # kg
+mu = param.mu_w
 
 # 掃描下壓力
 F_down = np.linspace(0, 2500, 200)

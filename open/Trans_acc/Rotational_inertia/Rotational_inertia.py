@@ -1,7 +1,15 @@
+import math
+import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 from pathlib import Path
+import sys
 
+sys.path.append(str(Path(__file__).resolve().parent.parent.parent))
+
+from load_data import ParameterLoader
+
+param = ParameterLoader().load("data.xlsx")
 
 # =========================================================
 # Output path
@@ -16,21 +24,22 @@ result_plot_path = OUTPUT_DIR / "gear_inertia_result.png"
 # Parameters
 # =========================================================
 
-T_values = np.array([20, 58, 24])   # Gear teeth
-ad = np.array([0, 12, 12])          # Shaft diameter [mm]
-h = np.array([20, 20, 10])           # Gear thickness [mm]
 
 D = 7870                             # Density [kg/m^3]
-N = 3
+N = param.N_gear
 
-M = 0.8                              # Gear module [mm]
+M = param.M_gear                              # Gear module [mm]
 
 # Gear tooth numbers
-Ts = 20
-Tp1 = 58
-Tp2 = 24
-Tr = 102
+Ts = param.Ts
+Tp1 = param.Tp1
+Tp2 = param.Tp2
+Tr = param.Tr
 
+T_values = np.array([Ts, Tp1, Tp2])   # Gear teeth
+ad = np.array([0, param.Da, param.Da])          # Shaft diameter [mm]
+
+h = np.array([param.h1, param.h1, param.h2])           # Gear thickness [mm]
 
 # =========================================================
 # Gear inertia calculation

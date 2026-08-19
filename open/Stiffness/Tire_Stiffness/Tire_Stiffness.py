@@ -1,17 +1,25 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from pathlib import Path
+import sys
+
+sys.path.append(str(Path(__file__).resolve().parent.parent.parent))
+
+from load_data import ParameterLoader
+
+param = ParameterLoader().load("data.xlsx")
 
 OUTPUT_DIR = Path(__file__).parent
 
 # Parameters
-MR = 1                # Motion ratio
-Kt = 100000.0             # Tire stiffness (N/m)
+MR = param.MR                # Motion ratio
+Kt = param.Kt             # Tire stiffness (N/m)
 
 Ks = np.linspace(10000, 50000, 2000)   # Spring stiffness (N/m)
 
-Kr_roll = 47700
-Kr_heave = 42500
+Kr_roll = param.Kr_roll
+Kr_heave = param.Kr_heave
+
 Kr_tag = (Kr_roll/2+Kr_heave/2)/2# 等校單輪剛性
 """
 分析上需注意!!!

@@ -1,6 +1,15 @@
+import math
+import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 from pathlib import Path
+import sys
+
+sys.path.append(str(Path(__file__).resolve().parent.parent.parent))
+
+from load_data import ParameterLoader
+
+param = ParameterLoader().load("data.xlsx")
 
 
 # =========================================================
@@ -19,28 +28,28 @@ plot_path = OUTPUT_DIR / "acceleration_simulation.png"
 g = 9.81
 
 # -------- Gear parameters --------
-Ts = 20          # Sun gear teeth
-Tp1 = 58         # Planet gear 1 teeth
-Tr = 102          # Ring gear teeth
-Tp2 = 24         # Planet gear 2 teeth
+Ts = param.Ts          # Sun gear teeth
+Tp1 = param.Tp1         # Planet gear 1 teeth
+Tr = param.Tr          # Ring gear teeth
+Tp2 = param.Tp2         # Planet gear 2 teeth
 
-M = 0.8          # Gear module [mm]
+M = param.M_gear          # Gear module [mm]
 
 # -------- Motor --------
-T_motor_max = 21       # Motor maximum torque [Nm]
-RPM_motor_max = 16000     # Motor maximum RPM
+T_motor_max = param.T_motor       # Motor maximum torque [Nm]
+RPM_motor_max = param.RPM_motor     # Motor maximum RPM
 
 # -------- Vehicle --------
-m = 321                    # Vehicle mass [kg]
+m = param.m                    # Vehicle mass [kg]
 
-mu_w = 1.7                 # Tire friction coefficient
+mu_w = param.mu_w                # Tire friction coefficient
 
-r_w = 0.203                # Wheel radius [m]
+r_w = param.rw                # Wheel radius [m]
 
-h_cog = 0.284              # CG height [m]
+h_cog = param.h_cog             # CG height [m]
 
-l = 1.55                   # Wheelbase [m]
-l_f = 0.775                # CG to front axle [m]
+l = param.L                   # Wheelbase [m]
+l_f = param.lf                # CG to front axle [m]
 
 
 # =========================================================

@@ -1,26 +1,31 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from pathlib import Path
+import sys
+
+sys.path.append(str(Path(__file__).resolve().parent.parent.parent))
+
+from load_data import ParameterLoader
+
+param = ParameterLoader().load("data.xlsx")
 
 # Constants
 g = 9.81
 
 # Vehicle data
-m = 260          # kg
-a = 1.7          # acceleration (g)
-h = 0.3         # CG height (m)
-L = 1.53         # wheelbase (m)
+m = param.m          # kg
+a = param.ax          # acceleration (g)
+h = param.h_cog         # CG height (m)
+L = param.L         # wheelbase (m)
+T = param.t      # track width (m)
+ay = param.ay
 
 target_theta = 1.5
+target_phi = 2
 
 # Allowable pitch angle sweep
 theta_deg = np.arange(0.1, 3.1, 0.1)
 theta = np.deg2rad(theta_deg)
-
-T = 1.25      # track width (m)
-ay = 1.7
-
-target_phi = 2
 
 phi_deg = np.arange(0.1, 3.1, 0.1)
 phi = np.deg2rad(phi_deg)

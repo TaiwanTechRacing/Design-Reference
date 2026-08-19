@@ -6,6 +6,7 @@ Private/
 *.mat
 *.zip
 *.csv
+*.xlsx
 # 編譯或暫存檔
 *.log
 *.tmp

@@ -1,6 +1,14 @@
+import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 from pathlib import Path
+import sys
+
+sys.path.append(str(Path(__file__).resolve().parent.parent.parent))
+
+from load_data import ParameterLoader
+
+param = ParameterLoader().load("data.xlsx")
 
 # ==========================================================
 # Parameters
@@ -8,13 +16,13 @@ from pathlib import Path
 
 g = 9.81
 
-m = 321.0          # kg
-mu = 1.7
+m = param.m          # kg
+mu = param.mu_w
 
 rho = 1.225        # kg/m^3
-A = 1            # m^2
+A = param.A_air            # m^2
 
-target_g = 2
+target_a = param.target_a
 
 # 速度 (km/h)
 v_kmh = np.arange(20, 101, 10)
@@ -26,7 +34,7 @@ v = v_kmh / 3.6
 # Required Downforce
 # ==========================================================
 
-ay = target_g * g
+ay = target_a * g
 
 F_required = m * ay
 
@@ -34,7 +42,7 @@ F_tire_without_aero = mu * m * g
 
 F_down_required = F_required / mu - m * g
 
-print(f"Target lateral acceleration : {target_g:.2f} g")
+print(f"Target lateral acceleration : {target_a:.2f} g")
 print(f"Vehicle mass                : {m:.1f} kg")
 print(f"Required tire force         : {F_required:.1f} N")
 print(f"Required downforce          : {F_down_required:.1f} N")

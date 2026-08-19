@@ -1,13 +1,20 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from pathlib import Path
+import sys
+
+sys.path.append(str(Path(__file__).resolve().parent.parent.parent))
+
+from load_data import ParameterLoader
+
+param = ParameterLoader().load("data.xlsx")
 
 OUTPUT_DIR = Path(__file__).parent
 
 # Parameters
 # =====================================
-m = 260 / 4          # kg
-k = 22550.0          # N/m
+m = param.m / 4          # kg
+k = param.Kr          # N/m
 
 
 # 計算

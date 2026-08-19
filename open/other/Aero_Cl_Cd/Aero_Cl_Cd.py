@@ -1,20 +1,26 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from pathlib import Path
+import sys
+
+sys.path.append(str(Path(__file__).resolve().parent.parent.parent))
+
+from load_data import ParameterLoader
+
+param = ParameterLoader().load("data.xlsx")
 
 # ==========================================
 # Parameters
 # ==========================================
 
 rho = 1.225          # kg/m^3
+F_ref = param.F_ref        # N
+v_ref_kmh = param.v_ref     # km/h
 
-w = 0.7              # m
-h = 0.7              # m
-
-A = w * h            # Reference area
-
-F_ref = 700.0        # N
-v_ref_kmh = 40     # km/h
+if param.A_air <=0:
+    A = param.w * param.h # 沒有有效面積的備用方案  
+else:
+    A = param.A_air # Reference area
 
 # km/h -> m/s
 v_ref = v_ref_kmh / 3.6

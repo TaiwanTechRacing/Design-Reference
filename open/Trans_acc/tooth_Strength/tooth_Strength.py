@@ -1,6 +1,15 @@
+import math
+import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 from pathlib import Path
+import sys
+
+sys.path.append(str(Path(__file__).resolve().parent.parent.parent))
+
+from load_data import ParameterLoader
+
+param = ParameterLoader().load("data.xlsx")
 
 
 # =========================================================
@@ -20,13 +29,13 @@ tau_ult = 560       # Ultimate strength [MPa]
 
 T_min = 20          # Minimum number of teeth
 
-z = 12              # Gear ratio
+z = param.z_gear              # Gear ratio
 
-T_motor = 21        # Motor torque [Nm]
+T_motor = param.T_motor        # Motor torque [Nm]
 
 h = 10              # Gear width [mm]
 
-M_min = 0.8         # Minimum manufacturable module [mm]
+M_min = param.M_gear         # Minimum manufacturable module [mm]
 
 SF = 5              # Safety factor
 

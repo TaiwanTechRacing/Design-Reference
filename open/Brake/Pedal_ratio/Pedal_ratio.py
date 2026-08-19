@@ -1,42 +1,52 @@
-import numpy as np
+import math
 import pandas as pd
+import numpy as np
 import matplotlib.pyplot as plt
 from pathlib import Path
+import sys
+
+sys.path.append(str(Path(__file__).resolve().parent.parent.parent))
+
+from load_data import ParameterLoader
+
+param = ParameterLoader().load("data.xlsx")
+
 
 # =====================================
 # Parameters
 g = 9.81
 
-m = 321.0# 車質量
-rf = 0.5# 重心配比
-rr = 0.5
+m = param.m# 車質量
+rf = param.lr/param.L         # Front weight distribution
+rr = param.lf/param.L          # Rear weight distribution
 
-h = 0.3# 重心高度
-L = 1.53# 軸距
 
-mu_w = 1.7
+h = param.h_cog# 重心高度
+L = param.L# 軸距
 
-r_w = 0.203
+mu_w = param.mu_w
 
-brake_rate = 0.75#目標比例
+r_w = param.rw
 
-r_disc_o = 0.21# 碟盤外徑
-d_gap = 0.02# 碟盤受力點與外徑間距
+brake_rate = param.brake_rate#目標比例
 
-mu_pad = 0.55# 來令片摩擦係數
+r_disc_o = param.r_disc_o# 碟盤外徑
+d_gap = param.d_gap# 碟盤受力點與外徑間距
 
-D_mc_f = 12e-3# MC直徑
-D_mc_r = 12e-3#14e-3
+mu_pad = param.mu_pad# 來令片摩擦係數
 
-D_caliper_f = 34e-3# 卡前直徑
-D_caliper_r = 34e-3
+D_mc_f = param.D_mc_f# MC直徑
+D_mc_r = param.D_mc_r#14e-3
 
-F_driver = 500.0# 車手出力
+D_caliper_f = param.D_caliper_f# 卡前直徑
+D_caliper_r = param.D_caliper_r
 
-balance_bar = 0.75# balance_bar
+F_driver = param.F_driver# 車手出力
 
-N_caliper_f = 2# 對幾卡鉗
-N_caliper_r = 2
+balance_bar = param.balance_bar# balance_bar
+
+N_caliper_f = param.N_caliper_f# 對幾卡鉗
+N_caliper_r = param.N_caliper_r
 
 SF = 1.50# 安全係數
 

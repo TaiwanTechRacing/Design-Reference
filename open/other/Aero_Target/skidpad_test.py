@@ -1,6 +1,13 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from pathlib import Path
+import sys
+
+sys.path.append(str(Path(__file__).resolve().parent.parent.parent))
+
+from load_data import ParameterLoader
+
+param = ParameterLoader().load("data.xlsx")
 
 # ==========================================================
 # Parameters
@@ -8,9 +15,11 @@ from pathlib import Path
 
 D = 18.25          # Skidpad diameter (m)
 g = 9.81
+
 factors = 1.4      # Safety / other factors
-mu_tire = 1.7
-m = 321
+
+mu_tire = param.mu_w
+m = param.m
 
 R = D / 2
 L = np.pi * D
