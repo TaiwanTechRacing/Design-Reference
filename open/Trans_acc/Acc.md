@@ -54,7 +54,7 @@ layout: base
 
 把所有阻力加起來假設最糟的情況。我們設定的減速比必須要高過這個數值。但基本上依據我們恐怖的加速需求完全不會發生扭矩不足的情況，頂多加速度降低而已。
 
-## 更多工具
+## 進階齒輪工具
 
 <div style="display: flex; justify-content: center; gap: 10px;">
   <img src="image.png" alt="image" width="300">
@@ -62,6 +62,7 @@ layout: base
 </div>
 
 
-1. [齒輪設計界面](Gear_Designer/Gear_Design_Interface.md) : 請將```Gear_Designer```資料夾整包下載並使用```Gear_Design_Interface.py```啟動
-2. [齒輪系幾何生成視覺化](Gear_system_Designer/gear_sys.md) : 請將```Gear_system_Designer```資料夾整包下載並使用```Gear_Layout_Preview.m```啟動
-3. [齒輪傳動計算表](Gear_Transmission_Sheet.md) : [點擊下載](Gear%20train%20calculation%20table.xlsx)
+1. 齒輪輪廓曲線設計界面 : 不再支援!!!
+2. 齒輪系幾何視覺化 : 不再支援!!!
+3. 齒輪傳動計算表 : 不再支援!!!
+

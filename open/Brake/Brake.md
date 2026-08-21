@@ -45,6 +45,7 @@ $，作為液壓系統建模的依據。
 
 [Download Code(機構動畫)](Pedal_box/Mechanical_structure_2Danimation.py)
 
+<div style="text-align: center;">
+<img src="Pedal_box/pedal_mechanism.gif" alt="image" width="800">
+</div>
 
-
-![Pedal_box_gif](Pedal_box/pedal_mechanism.gif)
