@@ -15,4 +15,4 @@ OUTPUT_DIR = Path(__file__).parent
 OUTPUT_DIR.mkdir(exist_ok=True)
 # 前處理==============================================
 
-print(param.m)# 輸出格式
+print("mass : ",param.m)# 輸出格式
