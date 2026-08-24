@@ -43,10 +43,3 @@ layout: base
 評估輪胎乾地極限與空氣下壓力（Downforce）之物理邊界，進而推算出賽車在不同過彎車速（$20 \sim 100\text{ km/h}$）下所需達到的**目標空氣動力學下壓力/升力係數（Required $C_L$）**。
 
 在賽車底盤與空氣動力學的聯合設計中，純依靠輪胎與車重的機械抓地力（Mechanical Grip）通常無法達到極限過彎的需求。透過計算車輛在極限狀態下的**下壓力缺口（Required Downforce）**，並反推各車速區間所需的 $C_L$ 值，能為空氣動力學團隊（Aerodynamics Team）在空力套件（如前後翼、擴散器）的幾何與氣流設計上提供極為重要的目標物理約束。
-
-## 其他小工具 (點擊下載)
-
-1. [刪除所有png](tools/clear_pngs.py)
-1. [資料小工具](tools/data_tool.py)
-1. [強制資料夾刪除工具](tools/file_delete_tool.py)
-1. [翻譯機(簡體>>繁體)](tools/Translator.py)
