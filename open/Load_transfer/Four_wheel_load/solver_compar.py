@@ -1,7 +1,16 @@
 import numpy as np
 import matplotlib.pyplot as plt
-from types import SimpleNamespace
+from pathlib import Path
+import sys
+
 from FWL_solver import four_wheel_load_cg, four_wheel_load_lsm
+OUTPUT_DIR = Path(__file__).resolve().parent
+sys.path.append(str(Path(__file__).resolve().parent.parent.parent))
+
+from load_data import ParameterLoader
+
+param = ParameterLoader().load("data.xlsx")
+from types import SimpleNamespace
 
 # =====================================
 # Vehicle parameters
@@ -10,36 +19,30 @@ from FWL_solver import four_wheel_load_cg, four_wheel_load_lsm
 g = 9.81
 
 car = SimpleNamespace(
-    m=321.0,
-    h=0.30,
-    L=1.53,
-    d=1.25,
-    CG_x=np.array([0.48, 0.52]),   # Front / Rear
+    m=param.m,          # kg
+    h=param.h_cog,           # m
+    L=param.L,           # wheelbase (m)
+    d=param.t,           # track width (m)
+
+    # CG distribution
+    CG_x=np.array([param.lr/param.L, param.lf/param.L]),   # Front / Rear
     CG_y=np.array([0.50, 0.50])    # Left / Right
 )
-
+a = param.target_a
 # =====================================
 # Vehicle state
 # =====================================
 
-ax = 2 * g
-ay = 2 * g
+ax = a * g
+ay = a * g
 
 # =====================================
 # External force
 # =====================================
 
-F_add = np.array([
-    0.0,
-    0.0,
-    0.0
-])
+F_add = np.zeros(3)
+CF_rela = np.zeros(3)
 
-CF_rela = np.array([
-    0.0,
-    0.0,
-    0.0
-])
 
 # =====================================
 # Compute wheel loads
@@ -106,36 +109,15 @@ plt.grid(axis="y")
 plt.legend()
 
 plt.tight_layout()
+plt.savefig(
+    OUTPUT_DIR / "four_wheel_load_comparison.png",
+    dpi=300
+)
+
 plt.show()
 
 # null space
 # ====================================
-import numpy as np
-import matplotlib.pyplot as plt
-from types import SimpleNamespace
-
-
-# =====================================
-# Vehicle
-# =====================================
-
-g = 9.81
-
-car = SimpleNamespace(
-    m=321,
-    h=0.30,
-    L=1.53,
-    d=1.25,
-
-    CG_x=np.array([0.48,0.52]),
-    CG_y=np.array([0.5,0.5])
-)
-
-
-F_add = np.zeros(3)
-CF_rela = np.zeros(3)
-
-
 
 # =====================================
 # Lateral acceleration sweep
@@ -312,7 +294,10 @@ plt.title(
 
 plt.grid()
 plt.legend()
-
+plt.savefig(
+    OUTPUT_DIR / "wheel_load_vs_ay.png",
+    dpi=300
+)
 plt.show()
 
 
@@ -355,7 +340,10 @@ plt.title(
 
 plt.grid()
 plt.legend()
-
+plt.savefig(
+    OUTPUT_DIR / "null_space_direction.png",
+    dpi=300
+)
 plt.show()
 
 plt.figure(figsize=(8,5))
@@ -399,5 +387,8 @@ plt.title(
 
 plt.grid()
 plt.legend()
-
+plt.savefig(
+    OUTPUT_DIR / "null_space_feasible_region.png",
+    dpi=300
+)
 plt.show()

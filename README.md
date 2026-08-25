@@ -9,6 +9,8 @@
 
 ## 懸吊
 
+[負載轉移](open/Load_transfer/load_transfer.md) : 4輪負載分析
+
 [懸吊剛性](open/Stiffness/Stiffness.md) : 懸吊剛性分析
 
 [懸吊動態](open/Dynamic/Dynamic.md) : 懸吊動態模型評估

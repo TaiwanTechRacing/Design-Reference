@@ -1,14 +1,19 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from pathlib import Path
+import sys
 from types import SimpleNamespace
+
+sys.path.append(str(Path(__file__).resolve().parent.parent.parent))
+
+from load_data import ParameterLoader
+
+param = ParameterLoader().load("data.xlsx")
+
+OUTPUT_DIR = Path(__file__).parent
+
+
 from FWL_solver import four_wheel_load_cg
-
-# ==========================================
-# Output directory
-# ==========================================
-
-OUTPUT_DIR = Path(__file__).resolve().parent
 
 # ==========================================
 # Vehicle parameters (Example)
@@ -17,16 +22,16 @@ OUTPUT_DIR = Path(__file__).resolve().parent
 g = 9.81
 
 car = SimpleNamespace(
-    m=321.0,          # kg
-    h=0.30,           # m
-    L=1.53,           # wheelbase (m)
-    d=1.25,           # track width (m)
+    m=param.m,          # kg
+    h=param.h_cog,           # m
+    L=param.L,           # wheelbase (m)
+    d=param.t,           # track width (m)
 
     # CG distribution
-    CG_x=np.array([0.51, 0.49]),   # Front / Rear
+    CG_x=np.array([param.lr/param.L, param.lf/param.L]),   # Front / Rear
     CG_y=np.array([0.50, 0.50])    # Left / Right
 )
-
+a = param.target_a
 # ==========================================
 # Aerodynamic force
 # ==========================================
@@ -48,14 +53,14 @@ CF_rela = np.array([
 # =====================================
 
 ax_range = np.linspace(
-    -2*g,
-    2*g,
+    -a*g,
+    a*g,
     50
 )
 
 ay_range = np.linspace(
-    -2*g,
-    2*g,
+    -a*g,
+    a*g,
     50
 )
 
