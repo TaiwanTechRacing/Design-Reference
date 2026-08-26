@@ -13,7 +13,7 @@ param = ParameterLoader().load("data.xlsx")
 g = 9.81
 
 # Vehicle data
-m = param.m          # kg
+m = param.ms          # kg
 ax = param.ax         # Longitudinal acceleration (g)
 ay = param.ay         # Lateral acceleration (g)
 

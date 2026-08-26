@@ -14,7 +14,7 @@ layout: base
 
 ## [車輛四輪正向載荷靜不定系統零空間分析](Four_wheel_load/solver_compar.md)
 
->四輪車輛屬於超靜定系統（Indeterminate System），僅憑三個靜力平衡方程式（垂直力平衡 $F_z$、側滾力矩平衡 $M_x$、俯仰力矩平衡 $M_y$）無法唯一確定四個輪胎的正向載荷，因此我們進行了一點奛玩的小研究。
+>四輪車輛屬於超靜定系統（Indeterminate System），僅憑三個靜力平衡方程式（垂直力平衡 $F_z$、側滾力矩平衡 $M_x$、俯仰力矩平衡 $M_y$）無法唯一確定四個輪胎的正向載荷，因此我們進行了一點好玩的小研究。
 
 對比兩種常見求解策略：
 1. **最小作用量法（Least Action Principle / LSM Method）**：利用偽逆矩陣（Pseudo-inverse）求解最小範數解（Minimum-norm solution），對應剛性幾何下最省能量的力分布。

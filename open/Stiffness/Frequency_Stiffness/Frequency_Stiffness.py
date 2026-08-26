@@ -12,9 +12,9 @@ param = ParameterLoader().load("data.xlsx")
 OUTPUT_DIR = Path(__file__).parent
 
 # Parameters
-m = param.m/2      # Quarter-car sprung mass (kg)
+m = param.ms/2      # Quarter-car sprung mass (kg)
 
-highlight_k = [param.K_roll,param.K_heave]
+highlight_k = [param.Kr_roll,param.Kr_heave]
 
 # Spring stiffness range
 k = np.linspace(10000, 100000, 5000)    # N/m

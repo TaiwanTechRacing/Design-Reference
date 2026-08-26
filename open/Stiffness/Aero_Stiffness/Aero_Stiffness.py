@@ -13,14 +13,14 @@ param = ParameterLoader().load("data.xlsx")
 g = 9.81
 
 # Vehicle data
-m = param.m          # kg
-a = param.ax          # acceleration (g)
+m = param.ms          # kg
+a = param.target_a          # acceleration (g)
 h = param.h_cog         # CG height (m)
 L = param.L         # wheelbase (m)
 T = param.t      # track width (m)
-ay = param.ay
+ay = param.target_a
 
-target_theta = 1.5
+target_theta = 1
 target_phi = 2
 
 # Allowable pitch angle sweep

@@ -15,7 +15,7 @@ OUTPUT_DIR = Path(__file__).parent
 MR = param.MR                # Motion ratio
 Kt = param.Kt             # Tire stiffness (N/m)
 
-Ks = np.linspace(10000, 50000, 2000)   # Spring stiffness (N/m)
+Ks = np.linspace(20000, 80000, 2000)   # Spring stiffness (N/m)
 
 Kr_roll = param.Kr_roll
 Kr_heave = param.Kr_heave
@@ -31,13 +31,31 @@ Kr_tag = (Kr_roll/2+Kr_heave/2)/2# 等校單輪剛性
 F = k(彈簧剛性)*x(單輪抬升量)
 單軸2輪力量*2倍壓縮輛等於4倍F
 """
-# 計算
-# =====================================
-# Wheel rate
-Kw = Ks * MR**2
+def ride_rate(MR,Kt,Ks):
+    # Wheel rate
+    Kw = Ks * MR**2
+
+    # Ride rate
+    Kr = (Kw * Kt) / (Kw + Kt)
+    return Kr
+
+def calc_spring_rate(MR, Kr, Kt):
+
+    Kw = Kr * Kt / (Kt - Kr)
+    Ks = Kw / MR**2
+    return Ks
+
+
+# Heave ride
+Ks_roll = calc_spring_rate(MR, Kr_roll, Kt*2)
+
+
+# roll ride
+Ks_heave = calc_spring_rate(MR, Kr_heave, Kt*2)
+
 
 # Ride rate
-Kr = (Kw * Kt) / (Kw + Kt)
+Kr = ride_rate(MR,Kt,Ks)
 
 
 # =====================================
@@ -52,23 +70,6 @@ Kr_tag_actual = Kr[idx_tag]
 
 k_rate = Kr_tag_actual / Ks_tag# 剛性修正
 
-print(f"Target Ride Rate = {Kr_tag / 1000:.2f} kN/m")
-print(f"Required Spring Rate = {Ks_tag / 1000:.2f} kN/m")
-print(f"Actual Ride Rate = {Kr_tag_actual / 1000:.2f} kN/m")
-print(f"k reduce rate = {k_rate:.2f} (Kr/Ks)")
-
-# 計算實際修正量
-Ks_roll = Kr_roll/k_rate
-Ks_heave = Kr_heave/k_rate
-
-Ks_actual = (Ks_roll/2+Ks_heave/2)/2# 等校單輪剛性
-Kw_actual = Ks_actual*MR**2
-Kr_actual = (Kw_actual * Kt) / (Kw_actual + Kt)
-
-print(f"Ks_roll = {Ks_roll/1000:.2f} kN/m")
-print(f"Ks_heave = {Ks_heave/1000:.2f} kN/m")
-print(f"Kw_actual = {Kw_actual/1000:.2f} kN/m")
-print(f"Kr_actual = {Kr_actual/1000:.2f} kN/m")
 # Plot
 
 # =====================================
@@ -103,7 +104,7 @@ plt.scatter(
 
 plt.annotate(
     f"Ks = {Ks_tag/1000:.2f} kN/m\n"
-    f"Kr = {Kr_tag_actual/1000:.2f} kN/m\n"
+    f"Kr = {Kr_tag/1000:.2f} kN/m\n"
     f"Ks_roll = {Ks_roll/1000:.2f} kN/m\n"
     f"Ks_heave = {Ks_heave/1000:.2f} kN/m",
     xy=(Ks_tag / 1000, Kr_tag_actual / 1000),
