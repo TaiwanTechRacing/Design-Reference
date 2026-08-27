@@ -11,8 +11,6 @@
 
 [負載轉移](open/Load_transfer/load_transfer.md) : 4輪負載分析
 
-
-
 [懸吊動態](open/Dynamic/Dynamic.md) : 懸吊動態模型評估
 
 [轉向分析](open/steering/steering.md) : 一些轉向小分析
@@ -23,6 +21,8 @@
 
 [阻尼評估](open/damping/damping.md) : 阻尼分析
 
+[tender彈簧分析]() : 快好了等等我
+
 ## 煞車與傳動加速
 
 [煞車](open/Brake/Brake.md) : 煞車系統設計
@@ -32,6 +32,6 @@
 
 ## 更多
 
-[全車](open/chassis/chassis.md) : 全車的慣性與幾何分析
+[其他](open/other/other.md) : 全車的慣性與幾何分析還有地圖
 
-[電力與空力](open/other/Other.md) : 更多其他組的分析
+[電力與空力](open/Ele_Aero/Ele_Aero.md) : 更多其他組的分析
