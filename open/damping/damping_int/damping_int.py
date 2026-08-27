@@ -1,15 +1,23 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from pathlib import Path
+import sys
 
+sys.path.append(str(Path(__file__).resolve().parent.parent.parent))
+
+from load_data import ParameterLoader
+
+param = ParameterLoader().load("data.xlsx")
+
+from scipy.integrate import solve_ivp
 
 # ==========================================
 # Parameter setting
 # ==========================================
 
-m = 1.0        # mass (kg)
-k = 50.0       # spring stiffness (N/m)
-c = 2.0        # damping coefficient (N*s/m)
+m = param.ms/4        # mass (kg)
+k = param.Kr       # spring stiffness (N/m)
+c = param.cr        # damping coefficient (N*s/m)
 g = 9.81       # gravity (m/s^2)
 
 

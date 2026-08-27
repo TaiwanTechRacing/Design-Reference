@@ -1,25 +1,28 @@
 import numpy as np
 import matplotlib.pyplot as plt
-from scipy.integrate import solve_ivp
 from pathlib import Path
+import sys
 
+sys.path.append(str(Path(__file__).resolve().parent.parent.parent))
 
+from load_data import ParameterLoader
+
+param = ParameterLoader().load("data.xlsx")
+
+from scipy.integrate import solve_ivp
 
 # ==========================================
 # Parameters
 # ==========================================
-
-m = 1.0       # mass
-
-k = 4.0       # spring stiffness
 
 # damping coefficient
 # underdamped: c < 2*sqrt(m*k)
 # critical:    c = 2*sqrt(m*k)
 # overdamped:  c > 2*sqrt(m*k)
 
-c = 1.0
-
+m = param.ms/4        # mass (kg)
+k = param.Kr       # spring stiffness (N/m)
+c = param.cr        # damping coefficient (N*s/m)
 
 
 # ==========================================
@@ -34,8 +37,6 @@ wn = np.sqrt(
 zeta = c / (
     2 * np.sqrt(m*k)
 )
-
-
 
 # ==========================================
 # ODE function
@@ -62,8 +63,6 @@ def damped_oscillator(t, y):
         dvdt
     ]
 
-
-
 # ==========================================
 # Simulation setup
 # ==========================================
@@ -78,7 +77,6 @@ y0 = [
     1,     # initial displacement
     0      # initial velocity
 ]
-
 
 # ==========================================
 # Solve ODE45 equivalent

@@ -1,7 +1,15 @@
 import numpy as np
 import matplotlib.pyplot as plt
-from scipy.integrate import solve_ivp
 from pathlib import Path
+import sys
+
+sys.path.append(str(Path(__file__).resolve().parent.parent.parent))
+
+from load_data import ParameterLoader
+
+param = ParameterLoader().load("data.xlsx")
+
+from scipy.integrate import solve_ivp
 
 
 
@@ -67,14 +75,14 @@ def quarter_car_damped_ode(
 # Parameters
 # ==========================================
 
-ms = 310 / 4      # sprung mass (kg)
+ms = param.ms / 4      # sprung mass (kg)
 
-mu = 40           # unsprung mass (kg)
+mu = param.mu           # unsprung mass (kg)
 
 
-ks = 40000        # suspension stiffness (N/m)
+ks = param.Ks        # suspension stiffness (N/m)
 
-kt = 180000       # tire stiffness (N/m)
+kt = param.Kt       # tire stiffness (N/m)
 
 
 g = 9.81

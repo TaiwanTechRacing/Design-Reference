@@ -1,6 +1,15 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from pathlib import Path
+import sys
+
+sys.path.append(str(Path(__file__).resolve().parent.parent.parent))
+
+from load_data import ParameterLoader
+
+param = ParameterLoader().load("data.xlsx")
+
+from scipy.integrate import solve_ivp
 
 
 
@@ -13,12 +22,12 @@ g = 9.81
 
 # Sprung mass
 
-ms = 310 / 4
+ms = param.ms / 4
 
 
 # Unsprung mass
 
-mu = 15 - 4
+mu = param.mu
 
 
 
@@ -26,11 +35,11 @@ mu = 15 - 4
 # Suspension parameters
 # ==========================================
 
-ks = 70000       # spring stiffness
+ks = param.Ks       # spring stiffness
 
-kt = 99000       # tire stiffness
+kt = param.Kt       # tire stiffness
 
-c = 4000         # damping
+c = param.cr         # damping
 
 
 

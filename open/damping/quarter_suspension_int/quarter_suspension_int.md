@@ -74,6 +74,7 @@ $$z_{i+1} = z_i + v_{i+1}\Delta t$$
 
 ## 結果
 
-程式會輸出簧上位置與簧上加速度隨時間變化，並計算最大簧上位置與最大簧上加速度。若執行程式產生 `quarter_car_euler_response.png`，建議將該圖放在本資料夾並於此段落加入置中圖片。
 
-此結果可用於觀察顯式 Euler 方法下的懸吊暫態反應，並與 ODE solver 版本比較數值穩定性與響應差異。
+<div style="text-align: center;">
+<img src="quarter_car_euler_response.png" alt="quarter_car_euler_response" width="800">
+</div>
