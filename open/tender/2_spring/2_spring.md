@@ -12,8 +12,6 @@ layout: base
 
 Tender spring 與 main spring 串聯時，等效剛性會明顯低於 main spring。本工具可用於快速評估 tender 比例是否會讓初段懸吊過軟，或是否能提供預期的低載荷 compliance。
 
-本設計目前傾向使用 tender spring 約為 main spring 的 $70\%$ 剛性。這個設定相對保守，目標是讓 tender 與 main 的剛性不要差太遠，同時讓 main spring 較早介入，避免車輛在高速或高下壓狀態才突然切換剛性，造成車手感受不連續。
-
 ## 參數
 
 以下為計算中所採用的物理量與符號說明：
@@ -59,12 +57,6 @@ Tender spring 的切換點可依照車輛需求分成三種策略：
 
 不論採用哪一種策略，因為 tender 與 main spring 串聯的物理機制，切換前後通常會產生兩倍以上的剛性差距。因此切換點不只影響行程使用量，也會影響車手對車輛支撐性的感受。
 
-以 tender = $0.7k_{main}$ 為例：
-
-$$k_{eq} = \frac{k_{main}(0.7k_{main})}{k_{main}+0.7k_{main}} \approx 0.41k_{main}$$
-
-也就是 tender 未壓滿前，初段等效剛性約只剩 main spring 的 $40\%$。若單純看 heave ride 剛性，目前估計會由約 $26666$ 切換至 $44444$，因此需要確認切換位置不會落在車輛最敏感或最常用的高速操作區。
-
 ## 結果
 
 程式會顯示兩張圖：
@@ -72,4 +64,4 @@ $$k_{eq} = \frac{k_{main}(0.7k_{main})}{k_{main}+0.7k_{main}} \approx 0.41k_{mai
 1. Tender spring 剛性與串聯等效剛性的關係。
 2. Tender 剛性比例與等效剛性比例的關係。
 
-結果可用來判斷 tender spring 若設定為 main spring 的 30% 到 70%，初段懸吊總剛性會降低到什麼程度。對目前設定而言，$70\%$ main spring 的 tender 已經會讓串聯後等效剛性降至約 $40\%$ main spring，因此後續分析重點不是只看低速柔順性，也要確認 main spring 介入時間點是否足夠早。由於程式目前未儲存圖片檔，若需要放入文件頁面，可在程式中加入 `savefig` 後再於此處引用輸出圖。
+結果可用來判斷 tender spring 若設定為 main spring 的 30% 到 70%，初段懸吊總剛性會降低到什麼程度。
