@@ -1,0 +1,2204 @@
+{
+    "Skidpad_score": 75,
+    "Autocross_score": 100,
+    "Endurance_score": 250,
+    "total_score": 425.0,
+    "Skidpad_r": 9.125,
+    "track_path": "input_map.xlsx",
+    "show_plt": false,
+    "Track_length": 1214.4410246708171,
+    "Average_radius": 19.376282119089943,
+    "Name": "fsae_A_2025_track.dxf",
+    "Country": "Australia",
+    "Track_points": 12186,
+    "Mesh_size": 0.1,
+    "Apex_count": 73,
+    "track_Minimum_radius": 2.523916549528796,
+    "top_5_score_rate": 55.7779864489311,
+    "Radius_distribution_length": [
+        {
+            "rank": 1,
+            "radius_range_m": "5-6",
+            "radius_center_m": 5.5,
+            "accumulated_length_m": 86.27763507032992
+        },
+        {
+            "rank": 2,
+            "radius_range_m": "7-8",
+            "radius_center_m": 7.5,
+            "accumulated_length_m": 81.68157792696098
+        },
+        {
+            "rank": 3,
+            "radius_range_m": "4-5",
+            "radius_center_m": 4.5,
+            "accumulated_length_m": 69.67007036892181
+        },
+        {
+            "rank": 4,
+            "radius_range_m": "15-16",
+            "radius_center_m": 15.5,
+            "accumulated_length_m": 50.90699874950758
+        },
+        {
+            "rank": 5,
+            "radius_range_m": "6-7",
+            "radius_center_m": 6.5,
+            "accumulated_length_m": 45.5002236999683
+        },
+        {
+            "rank": 6,
+            "radius_range_m": "3-4",
+            "radius_center_m": 3.5,
+            "accumulated_length_m": 44.80700805593483
+        },
+        {
+            "rank": 7,
+            "radius_range_m": "24-25",
+            "radius_center_m": 24.5,
+            "accumulated_length_m": 42.82977673049527
+        },
+        {
+            "rank": 8,
+            "radius_range_m": "38-39",
+            "radius_center_m": 38.5,
+            "accumulated_length_m": 40.99093760398375
+        },
+        {
+            "rank": 9,
+            "radius_range_m": "14-15",
+            "radius_center_m": 14.5,
+            "accumulated_length_m": 35.05558025782591
+        },
+        {
+            "rank": 10,
+            "radius_range_m": "8-9",
+            "radius_center_m": 8.5,
+            "accumulated_length_m": 34.819814126865424
+        },
+        {
+            "rank": 11,
+            "radius_range_m": "9-10",
+            "radius_center_m": 9.5,
+            "accumulated_length_m": 28.887301860021637
+        },
+        {
+            "rank": 12,
+            "radius_range_m": "26-27",
+            "radius_center_m": 26.5,
+            "accumulated_length_m": 28.523866340170912
+        },
+        {
+            "rank": 13,
+            "radius_range_m": "2-3",
+            "radius_center_m": 2.5,
+            "accumulated_length_m": 28.137692302782057
+        },
+        {
+            "rank": 14,
+            "radius_range_m": "48-49",
+            "radius_center_m": 48.5,
+            "accumulated_length_m": 22.09229209555474
+        },
+        {
+            "rank": 15,
+            "radius_range_m": "70-71",
+            "radius_center_m": 70.5,
+            "accumulated_length_m": 21.562412713290996
+        },
+        {
+            "rank": 16,
+            "radius_range_m": "12-13",
+            "radius_center_m": 12.5,
+            "accumulated_length_m": 20.062674395820295
+        },
+        {
+            "rank": 17,
+            "radius_range_m": "28-29",
+            "radius_center_m": 28.5,
+            "accumulated_length_m": 19.065175243194176
+        },
+        {
+            "rank": 18,
+            "radius_range_m": "13-14",
+            "radius_center_m": 13.5,
+            "accumulated_length_m": 18.19257380324416
+        },
+        {
+            "rank": 19,
+            "radius_range_m": "16-17",
+            "radius_center_m": 16.5,
+            "accumulated_length_m": 17.814495707287392
+        },
+        {
+            "rank": 20,
+            "radius_range_m": "18-19",
+            "radius_center_m": 18.5,
+            "accumulated_length_m": 16.526255203885626
+        },
+        {
+            "rank": 21,
+            "radius_range_m": "11-12",
+            "radius_center_m": 11.5,
+            "accumulated_length_m": 13.13547950145795
+        },
+        {
+            "rank": 22,
+            "radius_range_m": "20-21",
+            "radius_center_m": 20.5,
+            "accumulated_length_m": 12.546884140151974
+        },
+        {
+            "rank": 23,
+            "radius_range_m": "10-11",
+            "radius_center_m": 10.5,
+            "accumulated_length_m": 11.73927841592365
+        },
+        {
+            "rank": 24,
+            "radius_range_m": "27-28",
+            "radius_center_m": 27.5,
+            "accumulated_length_m": 11.449061144731672
+        },
+        {
+            "rank": 25,
+            "radius_range_m": "17-18",
+            "radius_center_m": 17.5,
+            "accumulated_length_m": 9.854762152143849
+        },
+        {
+            "rank": 26,
+            "radius_range_m": "66-67",
+            "radius_center_m": 66.5,
+            "accumulated_length_m": 9.777921144263473
+        },
+        {
+            "rank": 27,
+            "radius_range_m": "19-20",
+            "radius_center_m": 19.5,
+            "accumulated_length_m": 9.44458246359568
+        },
+        {
+            "rank": 28,
+            "radius_range_m": "22-23",
+            "radius_center_m": 22.5,
+            "accumulated_length_m": 6.666299432372853
+        },
+        {
+            "rank": 29,
+            "radius_range_m": "21-22",
+            "radius_center_m": 21.5,
+            "accumulated_length_m": 6.17398237071302
+        },
+        {
+            "rank": 30,
+            "radius_range_m": "25-26",
+            "radius_center_m": 25.5,
+            "accumulated_length_m": 5.879105493679845
+        },
+        {
+            "rank": 31,
+            "radius_range_m": "29-30",
+            "radius_center_m": 29.5,
+            "accumulated_length_m": 4.8796145596945735
+        },
+        {
+            "rank": 32,
+            "radius_range_m": "23-24",
+            "radius_center_m": 23.5,
+            "accumulated_length_m": 4.677716529221584
+        },
+        {
+            "rank": 33,
+            "radius_range_m": "30-31",
+            "radius_center_m": 30.5,
+            "accumulated_length_m": 3.5883502228289217
+        },
+        {
+            "rank": 34,
+            "radius_range_m": "32-33",
+            "radius_center_m": 32.5,
+            "accumulated_length_m": 2.9896856573466266
+        },
+        {
+            "rank": 35,
+            "radius_range_m": "36-37",
+            "radius_center_m": 36.5,
+            "accumulated_length_m": 2.7886116218828647
+        },
+        {
+            "rank": 36,
+            "radius_range_m": "33-34",
+            "radius_center_m": 33.5,
+            "accumulated_length_m": 2.5904195694822647
+        },
+        {
+            "rank": 37,
+            "radius_range_m": "34-35",
+            "radius_center_m": 34.5,
+            "accumulated_length_m": 2.4900796285161277
+        },
+        {
+            "rank": 38,
+            "radius_range_m": "40-41",
+            "radius_center_m": 40.5,
+            "accumulated_length_m": 2.4898215853791044
+        },
+        {
+            "rank": 39,
+            "radius_range_m": "50-51",
+            "radius_center_m": 50.5,
+            "accumulated_length_m": 2.3925533928786535
+        },
+        {
+            "rank": 40,
+            "radius_range_m": "39-40",
+            "radius_center_m": 39.5,
+            "accumulated_length_m": 2.3894603328108133
+        },
+        {
+            "rank": 41,
+            "radius_range_m": "49-50",
+            "radius_center_m": 49.5,
+            "accumulated_length_m": 2.196226246921924
+        },
+        {
+            "rank": 42,
+            "radius_range_m": "41-42",
+            "radius_center_m": 41.5,
+            "accumulated_length_m": 2.1942596852517227
+        },
+        {
+            "rank": 43,
+            "radius_range_m": "44-45",
+            "radius_center_m": 44.5,
+            "accumulated_length_m": 2.0925665430885374
+        },
+        {
+            "rank": 44,
+            "radius_range_m": "47-48",
+            "radius_center_m": 47.5,
+            "accumulated_length_m": 2.0916264882628184
+        },
+        {
+            "rank": 45,
+            "radius_range_m": "31-32",
+            "radius_center_m": 31.5,
+            "accumulated_length_m": 2.0906062781205037
+        },
+        {
+            "rank": 46,
+            "radius_range_m": "42-43",
+            "radius_center_m": 42.5,
+            "accumulated_length_m": 1.8934697254815092
+        },
+        {
+            "rank": 47,
+            "radius_range_m": "35-36",
+            "radius_center_m": 35.5,
+            "accumulated_length_m": 1.7951497862155747
+        },
+        {
+            "rank": 48,
+            "radius_range_m": "60-61",
+            "radius_center_m": 60.5,
+            "accumulated_length_m": 1.594509566711963
+        },
+        {
+            "rank": 49,
+            "radius_range_m": "46-47",
+            "radius_center_m": 46.5,
+            "accumulated_length_m": 1.5931648110995411
+        },
+        {
+            "rank": 50,
+            "radius_range_m": "37-38",
+            "radius_center_m": 37.5,
+            "accumulated_length_m": 1.5916103056076736
+        },
+        {
+            "rank": 51,
+            "radius_range_m": "45-46",
+            "radius_center_m": 45.5,
+            "accumulated_length_m": 1.4939220036869756
+        },
+        {
+            "rank": 52,
+            "radius_range_m": "64-65",
+            "radius_center_m": 64.5,
+            "accumulated_length_m": 1.3956682945370176
+        },
+        {
+            "rank": 53,
+            "radius_range_m": "61-62",
+            "radius_center_m": 61.5,
+            "accumulated_length_m": 1.3932584696912045
+        },
+        {
+            "rank": 54,
+            "radius_range_m": "69-70",
+            "radius_center_m": 69.5,
+            "accumulated_length_m": 1.2968473307653312
+        },
+        {
+            "rank": 55,
+            "radius_range_m": "67-68",
+            "radius_center_m": 67.5,
+            "accumulated_length_m": 1.2966263369637545
+        },
+        {
+            "rank": 56,
+            "radius_range_m": "54-55",
+            "radius_center_m": 54.5,
+            "accumulated_length_m": 1.2961594375244658
+        },
+        {
+            "rank": 57,
+            "radius_range_m": "63-64",
+            "radius_center_m": 63.5,
+            "accumulated_length_m": 1.2936891528236174
+        },
+        {
+            "rank": 58,
+            "radius_range_m": "71-72",
+            "radius_center_m": 71.5,
+            "accumulated_length_m": 1.1982306452420062
+        },
+        {
+            "rank": 59,
+            "radius_range_m": "83-84",
+            "radius_center_m": 83.5,
+            "accumulated_length_m": 1.1961866871956772
+        },
+        {
+            "rank": 60,
+            "radius_range_m": "72-73",
+            "radius_center_m": 72.5,
+            "accumulated_length_m": 1.1953747059970965
+        },
+        {
+            "rank": 61,
+            "radius_range_m": "84-85",
+            "radius_center_m": 84.5,
+            "accumulated_length_m": 1.1913158687780196
+        },
+        {
+            "rank": 62,
+            "radius_range_m": "53-54",
+            "radius_center_m": 53.5,
+            "accumulated_length_m": 1.09788484827925
+        },
+        {
+            "rank": 63,
+            "radius_range_m": "55-56",
+            "radius_center_m": 55.5,
+            "accumulated_length_m": 1.0972737342624441
+        },
+        {
+            "rank": 64,
+            "radius_range_m": "51-52",
+            "radius_center_m": 51.5,
+            "accumulated_length_m": 0.9991936050748791
+        },
+        {
+            "rank": 65,
+            "radius_range_m": "52-53",
+            "radius_center_m": 52.5,
+            "accumulated_length_m": 0.9987224364671192
+        },
+        {
+            "rank": 66,
+            "radius_range_m": "68-69",
+            "radius_center_m": 68.5,
+            "accumulated_length_m": 0.9984596796707592
+        },
+        {
+            "rank": 67,
+            "radius_range_m": "58-59",
+            "radius_center_m": 58.5,
+            "accumulated_length_m": 0.9958238258903975
+        },
+        {
+            "rank": 68,
+            "radius_range_m": "79-80",
+            "radius_center_m": 79.5,
+            "accumulated_length_m": 0.8969279973633775
+        },
+        {
+            "rank": 69,
+            "radius_range_m": "43-44",
+            "radius_center_m": 43.5,
+            "accumulated_length_m": 0.8965905843493829
+        },
+        {
+            "rank": 70,
+            "radius_range_m": "65-66",
+            "radius_center_m": 65.5,
+            "accumulated_length_m": 0.7991354402354318
+        },
+        {
+            "rank": 71,
+            "radius_range_m": "73-74",
+            "radius_center_m": 73.5,
+            "accumulated_length_m": 0.7979080858810903
+        },
+        {
+            "rank": 72,
+            "radius_range_m": "56-57",
+            "radius_center_m": 56.5,
+            "accumulated_length_m": 0.797282266007187
+        },
+        {
+            "rank": 73,
+            "radius_range_m": "87-88",
+            "radius_center_m": 87.5,
+            "accumulated_length_m": 0.797043539754327
+        },
+        {
+            "rank": 74,
+            "radius_range_m": "80-81",
+            "radius_center_m": 80.5,
+            "accumulated_length_m": 0.6987783237852909
+        },
+        {
+            "rank": 75,
+            "radius_range_m": "74-75",
+            "radius_center_m": 74.5,
+            "accumulated_length_m": 0.698515542647101
+        },
+        {
+            "rank": 76,
+            "radius_range_m": "59-60",
+            "radius_center_m": 59.5,
+            "accumulated_length_m": 0.6984074070043107
+        },
+        {
+            "rank": 77,
+            "radius_range_m": "77-78",
+            "radius_center_m": 77.5,
+            "accumulated_length_m": 0.5988942947309397
+        },
+        {
+            "rank": 78,
+            "radius_range_m": "97-98",
+            "radius_center_m": 97.5,
+            "accumulated_length_m": 0.5987359268684713
+        },
+        {
+            "rank": 79,
+            "radius_range_m": "62-63",
+            "radius_center_m": 62.5,
+            "accumulated_length_m": 0.5984295781665878
+        },
+        {
+            "rank": 80,
+            "radius_range_m": "90-91",
+            "radius_center_m": 90.5,
+            "accumulated_length_m": 0.5982506915981958
+        },
+        {
+            "rank": 81,
+            "radius_range_m": "78-79",
+            "radius_center_m": 78.5,
+            "accumulated_length_m": 0.5981430062008712
+        },
+        {
+            "rank": 82,
+            "radius_range_m": "89-90",
+            "radius_center_m": 89.5,
+            "accumulated_length_m": 0.5979366405504152
+        },
+        {
+            "rank": 83,
+            "radius_range_m": "86-87",
+            "radius_center_m": 86.5,
+            "accumulated_length_m": 0.49932860792637257
+        },
+        {
+            "rank": 84,
+            "radius_range_m": "57-58",
+            "radius_center_m": 57.5,
+            "accumulated_length_m": 0.49894839737658003
+        },
+        {
+            "rank": 85,
+            "radius_range_m": "82-83",
+            "radius_center_m": 82.5,
+            "accumulated_length_m": 0.4984986892444567
+        },
+        {
+            "rank": 86,
+            "radius_range_m": "91-92",
+            "radius_center_m": 91.5,
+            "accumulated_length_m": 0.39896760197211734
+        },
+        {
+            "rank": 87,
+            "radius_range_m": "96-97",
+            "radius_center_m": 96.5,
+            "accumulated_length_m": 0.3989558691221191
+        },
+        {
+            "rank": 88,
+            "radius_range_m": "94-95",
+            "radius_center_m": 94.5,
+            "accumulated_length_m": 0.39884919814141995
+        },
+        {
+            "rank": 89,
+            "radius_range_m": "75-76",
+            "radius_center_m": 75.5,
+            "accumulated_length_m": 0.398573403278192
+        },
+        {
+            "rank": 90,
+            "radius_range_m": "98-99",
+            "radius_center_m": 98.5,
+            "accumulated_length_m": 0.3977560881619411
+        },
+        {
+            "rank": 91,
+            "radius_range_m": "95-96",
+            "radius_center_m": 95.5,
+            "accumulated_length_m": 0.39753563920805846
+        },
+        {
+            "rank": 92,
+            "radius_range_m": "81-82",
+            "radius_center_m": 81.5,
+            "accumulated_length_m": 0.29960175408723444
+        },
+        {
+            "rank": 93,
+            "radius_range_m": "76-77",
+            "radius_center_m": 76.5,
+            "accumulated_length_m": 0.2993451493457542
+        },
+        {
+            "rank": 94,
+            "radius_range_m": "92-93",
+            "radius_center_m": 92.5,
+            "accumulated_length_m": 0.29856111335800506
+        },
+        {
+            "rank": 95,
+            "radius_range_m": "93-94",
+            "radius_center_m": 93.5,
+            "accumulated_length_m": 0.19970662607192935
+        },
+        {
+            "rank": 96,
+            "radius_range_m": "88-89",
+            "radius_center_m": 88.5,
+            "accumulated_length_m": 0.19953427805421597
+        },
+        {
+            "rank": 97,
+            "radius_range_m": "99-100",
+            "radius_center_m": 99.5,
+            "accumulated_length_m": 0.09978450704261377
+        },
+        {
+            "rank": 98,
+            "radius_range_m": "85-86",
+            "radius_center_m": 85.5,
+            "accumulated_length_m": 0.09895719659573388
+        },
+        {
+            "rank": 99,
+            "radius_range_m": "0-1",
+            "radius_center_m": 0.5,
+            "accumulated_length_m": 0.0
+        },
+        {
+            "rank": 100,
+            "radius_range_m": "1-2",
+            "radius_center_m": 1.5,
+            "accumulated_length_m": 0.0
+        }
+    ],
+    "Radius_distribution_time": [
+        {
+            "rank": 1,
+            "radius_range_m": "5-6",
+            "radius_center_m": 5.5,
+            "accumulated_time_s": 27.85187434847733
+        },
+        {
+            "rank": 2,
+            "radius_range_m": "4-5",
+            "radius_center_m": 4.5,
+            "accumulated_time_s": 25.116675592004004
+        },
+        {
+            "rank": 3,
+            "radius_range_m": "7-8",
+            "radius_center_m": 7.5,
+            "accumulated_time_s": 22.857866685244232
+        },
+        {
+            "rank": 4,
+            "radius_range_m": "3-4",
+            "radius_center_m": 3.5,
+            "accumulated_time_s": 18.149385994919847
+        },
+        {
+            "rank": 5,
+            "radius_range_m": "6-7",
+            "radius_center_m": 6.5,
+            "accumulated_time_s": 13.719871585400995
+        },
+        {
+            "rank": 6,
+            "radius_range_m": "2-3",
+            "radius_center_m": 2.5,
+            "accumulated_time_s": 13.241985251845216
+        },
+        {
+            "rank": 7,
+            "radius_range_m": "15-16",
+            "radius_center_m": 15.5,
+            "accumulated_time_s": 9.863160385488527
+        },
+        {
+            "rank": 8,
+            "radius_range_m": "8-9",
+            "radius_center_m": 8.5,
+            "accumulated_time_s": 9.166222084710668
+        },
+        {
+            "rank": 9,
+            "radius_range_m": "9-10",
+            "radius_center_m": 9.5,
+            "accumulated_time_s": 7.23309333038344
+        },
+        {
+            "rank": 10,
+            "radius_range_m": "14-15",
+            "radius_center_m": 14.5,
+            "accumulated_time_s": 7.093966804740688
+        },
+        {
+            "rank": 11,
+            "radius_range_m": "24-25",
+            "radius_center_m": 24.5,
+            "accumulated_time_s": 6.621283471384686
+        },
+        {
+            "rank": 12,
+            "radius_range_m": "38-39",
+            "radius_center_m": 38.5,
+            "accumulated_time_s": 5.090935124703066
+        },
+        {
+            "rank": 13,
+            "radius_range_m": "12-13",
+            "radius_center_m": 12.5,
+            "accumulated_time_s": 4.3556560410882526
+        },
+        {
+            "rank": 14,
+            "radius_range_m": "26-27",
+            "radius_center_m": 26.5,
+            "accumulated_time_s": 4.217421012824246
+        },
+        {
+            "rank": 15,
+            "radius_range_m": "13-14",
+            "radius_center_m": 13.5,
+            "accumulated_time_s": 3.772566977070994
+        },
+        {
+            "rank": 16,
+            "radius_range_m": "16-17",
+            "radius_center_m": 16.5,
+            "accumulated_time_s": 3.3695146495243193
+        },
+        {
+            "rank": 17,
+            "radius_range_m": "11-12",
+            "radius_center_m": 11.5,
+            "accumulated_time_s": 2.977548134805062
+        },
+        {
+            "rank": 18,
+            "radius_range_m": "18-19",
+            "radius_center_m": 18.5,
+            "accumulated_time_s": 2.9505719030328237
+        },
+        {
+            "rank": 19,
+            "radius_range_m": "10-11",
+            "radius_center_m": 10.5,
+            "accumulated_time_s": 2.7823722294043023
+        },
+        {
+            "rank": 20,
+            "radius_range_m": "28-29",
+            "radius_center_m": 28.5,
+            "accumulated_time_s": 2.7410749100937153
+        },
+        {
+            "rank": 21,
+            "radius_range_m": "48-49",
+            "radius_center_m": 48.5,
+            "accumulated_time_s": 2.4256660476638956
+        },
+        {
+            "rank": 22,
+            "radius_range_m": "20-21",
+            "radius_center_m": 20.5,
+            "accumulated_time_s": 2.1239346801058616
+        },
+        {
+            "rank": 23,
+            "radius_range_m": "70-71",
+            "radius_center_m": 70.5,
+            "accumulated_time_s": 1.964626089379209
+        },
+        {
+            "rank": 24,
+            "radius_range_m": "17-18",
+            "radius_center_m": 17.5,
+            "accumulated_time_s": 1.8092042558868116
+        },
+        {
+            "rank": 25,
+            "radius_range_m": "27-28",
+            "radius_center_m": 27.5,
+            "accumulated_time_s": 1.6734668632864498
+        },
+        {
+            "rank": 26,
+            "radius_range_m": "19-20",
+            "radius_center_m": 19.5,
+            "accumulated_time_s": 1.6391850057997885
+        },
+        {
+            "rank": 27,
+            "radius_range_m": "22-23",
+            "radius_center_m": 22.5,
+            "accumulated_time_s": 1.0783211727332684
+        },
+        {
+            "rank": 28,
+            "radius_range_m": "21-22",
+            "radius_center_m": 21.5,
+            "accumulated_time_s": 1.0212267460541682
+        },
+        {
+            "rank": 29,
+            "radius_range_m": "66-67",
+            "radius_center_m": 66.5,
+            "accumulated_time_s": 0.922410714212873
+        },
+        {
+            "rank": 30,
+            "radius_range_m": "25-26",
+            "radius_center_m": 25.5,
+            "accumulated_time_s": 0.8925808655370133
+        },
+        {
+            "rank": 31,
+            "radius_range_m": "23-24",
+            "radius_center_m": 23.5,
+            "accumulated_time_s": 0.7398699799231849
+        },
+        {
+            "rank": 32,
+            "radius_range_m": "29-30",
+            "radius_center_m": 29.5,
+            "accumulated_time_s": 0.6890974108330852
+        },
+        {
+            "rank": 33,
+            "radius_range_m": "30-31",
+            "radius_center_m": 30.5,
+            "accumulated_time_s": 0.49883996281576515
+        },
+        {
+            "rank": 34,
+            "radius_range_m": "32-33",
+            "radius_center_m": 32.5,
+            "accumulated_time_s": 0.4021600656094506
+        },
+        {
+            "rank": 35,
+            "radius_range_m": "36-37",
+            "radius_center_m": 36.5,
+            "accumulated_time_s": 0.353722895969355
+        },
+        {
+            "rank": 36,
+            "radius_range_m": "33-34",
+            "radius_center_m": 33.5,
+            "accumulated_time_s": 0.34328922331229705
+        },
+        {
+            "rank": 37,
+            "radius_range_m": "34-35",
+            "radius_center_m": 34.5,
+            "accumulated_time_s": 0.32486614023105176
+        },
+        {
+            "rank": 38,
+            "radius_range_m": "40-41",
+            "radius_center_m": 40.5,
+            "accumulated_time_s": 0.3003590724271419
+        },
+        {
+            "rank": 39,
+            "radius_range_m": "39-40",
+            "radius_center_m": 39.5,
+            "accumulated_time_s": 0.29167260034691367
+        },
+        {
+            "rank": 40,
+            "radius_range_m": "31-32",
+            "radius_center_m": 31.5,
+            "accumulated_time_s": 0.2858265656037986
+        },
+        {
+            "rank": 41,
+            "radius_range_m": "41-42",
+            "radius_center_m": 41.5,
+            "accumulated_time_s": 0.26149911179692253
+        },
+        {
+            "rank": 42,
+            "radius_range_m": "50-51",
+            "radius_center_m": 50.5,
+            "accumulated_time_s": 0.25840758501502137
+        },
+        {
+            "rank": 43,
+            "radius_range_m": "44-45",
+            "radius_center_m": 44.5,
+            "accumulated_time_s": 0.2408427921562577
+        },
+        {
+            "rank": 44,
+            "radius_range_m": "49-50",
+            "radius_center_m": 49.5,
+            "accumulated_time_s": 0.2395876460685713
+        },
+        {
+            "rank": 45,
+            "radius_range_m": "47-48",
+            "radius_center_m": 47.5,
+            "accumulated_time_s": 0.2324909811427176
+        },
+        {
+            "rank": 46,
+            "radius_range_m": "35-36",
+            "radius_center_m": 35.5,
+            "accumulated_time_s": 0.23129101901091076
+        },
+        {
+            "rank": 47,
+            "radius_range_m": "42-43",
+            "radius_center_m": 42.5,
+            "accumulated_time_s": 0.2227686260573023
+        },
+        {
+            "rank": 48,
+            "radius_range_m": "37-38",
+            "radius_center_m": 37.5,
+            "accumulated_time_s": 0.19941588104907737
+        },
+        {
+            "rank": 49,
+            "radius_range_m": "46-47",
+            "radius_center_m": 46.5,
+            "accumulated_time_s": 0.17924311718647346
+        },
+        {
+            "rank": 50,
+            "radius_range_m": "45-46",
+            "radius_center_m": 45.5,
+            "accumulated_time_s": 0.1698733047587666
+        },
+        {
+            "rank": 51,
+            "radius_range_m": "60-61",
+            "radius_center_m": 60.5,
+            "accumulated_time_s": 0.15720546209092845
+        },
+        {
+            "rank": 52,
+            "radius_range_m": "61-62",
+            "radius_center_m": 61.5,
+            "accumulated_time_s": 0.1363677205071383
+        },
+        {
+            "rank": 53,
+            "radius_range_m": "54-55",
+            "radius_center_m": 54.5,
+            "accumulated_time_s": 0.13467695107704003
+        },
+        {
+            "rank": 54,
+            "radius_range_m": "64-65",
+            "radius_center_m": 64.5,
+            "accumulated_time_s": 0.13333849647838747
+        },
+        {
+            "rank": 55,
+            "radius_range_m": "63-64",
+            "radius_center_m": 63.5,
+            "accumulated_time_s": 0.12447760088721793
+        },
+        {
+            "rank": 56,
+            "radius_range_m": "67-68",
+            "radius_center_m": 67.5,
+            "accumulated_time_s": 0.12097690689560636
+        },
+        {
+            "rank": 57,
+            "radius_range_m": "69-70",
+            "radius_center_m": 69.5,
+            "accumulated_time_s": 0.11921450440601689
+        },
+        {
+            "rank": 58,
+            "radius_range_m": "53-54",
+            "radius_center_m": 53.5,
+            "accumulated_time_s": 0.11522515517967236
+        },
+        {
+            "rank": 59,
+            "radius_range_m": "55-56",
+            "radius_center_m": 55.5,
+            "accumulated_time_s": 0.1130999800722634
+        },
+        {
+            "rank": 60,
+            "radius_range_m": "71-72",
+            "radius_center_m": 71.5,
+            "accumulated_time_s": 0.10875764807300925
+        },
+        {
+            "rank": 61,
+            "radius_range_m": "72-73",
+            "radius_center_m": 72.5,
+            "accumulated_time_s": 0.10779417486335774
+        },
+        {
+            "rank": 62,
+            "radius_range_m": "51-52",
+            "radius_center_m": 51.5,
+            "accumulated_time_s": 0.10676793566722154
+        },
+        {
+            "rank": 63,
+            "radius_range_m": "52-53",
+            "radius_center_m": 52.5,
+            "accumulated_time_s": 0.10575347389027456
+        },
+        {
+            "rank": 64,
+            "radius_range_m": "43-44",
+            "radius_center_m": 43.5,
+            "accumulated_time_s": 0.10433111808504236
+        },
+        {
+            "rank": 65,
+            "radius_range_m": "83-84",
+            "radius_center_m": 83.5,
+            "accumulated_time_s": 0.10048809119149382
+        },
+        {
+            "rank": 66,
+            "radius_range_m": "58-59",
+            "radius_center_m": 58.5,
+            "accumulated_time_s": 0.09973982203999299
+        },
+        {
+            "rank": 67,
+            "radius_range_m": "84-85",
+            "radius_center_m": 84.5,
+            "accumulated_time_s": 0.09951572913135465
+        },
+        {
+            "rank": 68,
+            "radius_range_m": "68-69",
+            "radius_center_m": 68.5,
+            "accumulated_time_s": 0.09242907825338875
+        },
+        {
+            "rank": 69,
+            "radius_range_m": "56-57",
+            "radius_center_m": 56.5,
+            "accumulated_time_s": 0.08136593884083254
+        },
+        {
+            "rank": 70,
+            "radius_range_m": "79-80",
+            "radius_center_m": 79.5,
+            "accumulated_time_s": 0.07714967451289567
+        },
+        {
+            "rank": 71,
+            "radius_range_m": "65-66",
+            "radius_center_m": 65.5,
+            "accumulated_time_s": 0.07564303344065593
+        },
+        {
+            "rank": 72,
+            "radius_range_m": "73-74",
+            "radius_center_m": 73.5,
+            "accumulated_time_s": 0.07131041455107834
+        },
+        {
+            "rank": 73,
+            "radius_range_m": "59-60",
+            "radius_center_m": 59.5,
+            "accumulated_time_s": 0.06946940156808523
+        },
+        {
+            "rank": 74,
+            "radius_range_m": "87-88",
+            "radius_center_m": 87.5,
+            "accumulated_time_s": 0.06526732038969385
+        },
+        {
+            "rank": 75,
+            "radius_range_m": "74-75",
+            "radius_center_m": 74.5,
+            "accumulated_time_s": 0.06212509384491227
+        },
+        {
+            "rank": 76,
+            "radius_range_m": "80-81",
+            "radius_center_m": 80.5,
+            "accumulated_time_s": 0.05972858046371243
+        },
+        {
+            "rank": 77,
+            "radius_range_m": "62-63",
+            "radius_center_m": 62.5,
+            "accumulated_time_s": 0.05804139873171721
+        },
+        {
+            "rank": 78,
+            "radius_range_m": "77-78",
+            "radius_center_m": 77.5,
+            "accumulated_time_s": 0.05221452711035113
+        },
+        {
+            "rank": 79,
+            "radius_range_m": "78-79",
+            "radius_center_m": 78.5,
+            "accumulated_time_s": 0.05178649535125146
+        },
+        {
+            "rank": 80,
+            "radius_range_m": "57-58",
+            "radius_center_m": 57.5,
+            "accumulated_time_s": 0.05035794575468344
+        },
+        {
+            "rank": 81,
+            "radius_range_m": "89-90",
+            "radius_center_m": 89.5,
+            "accumulated_time_s": 0.04848070992554199
+        },
+        {
+            "rank": 82,
+            "radius_range_m": "90-91",
+            "radius_center_m": 90.5,
+            "accumulated_time_s": 0.04826848347113355
+        },
+        {
+            "rank": 83,
+            "radius_range_m": "97-98",
+            "radius_center_m": 97.5,
+            "accumulated_time_s": 0.0464928006166474
+        },
+        {
+            "rank": 84,
+            "radius_range_m": "82-83",
+            "radius_center_m": 82.5,
+            "accumulated_time_s": 0.04210330396458062
+        },
+        {
+            "rank": 85,
+            "radius_range_m": "86-87",
+            "radius_center_m": 86.5,
+            "accumulated_time_s": 0.041137487232248304
+        },
+        {
+            "rank": 86,
+            "radius_range_m": "75-76",
+            "radius_center_m": 75.5,
+            "accumulated_time_s": 0.03513301921108791
+        },
+        {
+            "rank": 87,
+            "radius_range_m": "91-92",
+            "radius_center_m": 91.5,
+            "accumulated_time_s": 0.031956512653010805
+        },
+        {
+            "rank": 88,
+            "radius_range_m": "94-95",
+            "radius_center_m": 94.5,
+            "accumulated_time_s": 0.031456327120594096
+        },
+        {
+            "rank": 89,
+            "radius_range_m": "95-96",
+            "radius_center_m": 95.5,
+            "accumulated_time_s": 0.03119538733534455
+        },
+        {
+            "rank": 90,
+            "radius_range_m": "96-97",
+            "radius_center_m": 96.5,
+            "accumulated_time_s": 0.031175502007215528
+        },
+        {
+            "rank": 91,
+            "radius_range_m": "98-99",
+            "radius_center_m": 98.5,
+            "accumulated_time_s": 0.030748914521694815
+        },
+        {
+            "rank": 92,
+            "radius_range_m": "76-77",
+            "radius_center_m": 76.5,
+            "accumulated_time_s": 0.026275877907806944
+        },
+        {
+            "rank": 93,
+            "radius_range_m": "81-82",
+            "radius_center_m": 81.5,
+            "accumulated_time_s": 0.02543336159337173
+        },
+        {
+            "rank": 94,
+            "radius_range_m": "92-93",
+            "radius_center_m": 92.5,
+            "accumulated_time_s": 0.023818054511679065
+        },
+        {
+            "rank": 95,
+            "radius_range_m": "88-89",
+            "radius_center_m": 88.5,
+            "accumulated_time_s": 0.016268987295603665
+        },
+        {
+            "rank": 96,
+            "radius_range_m": "93-94",
+            "radius_center_m": 93.5,
+            "accumulated_time_s": 0.015836080595818203
+        },
+        {
+            "rank": 97,
+            "radius_range_m": "85-86",
+            "radius_center_m": 85.5,
+            "accumulated_time_s": 0.008189309263002542
+        },
+        {
+            "rank": 98,
+            "radius_range_m": "99-100",
+            "radius_center_m": 99.5,
+            "accumulated_time_s": 0.007655027474640974
+        },
+        {
+            "rank": 99,
+            "radius_range_m": "0-1",
+            "radius_center_m": 0.5,
+            "accumulated_time_s": 0.0
+        },
+        {
+            "rank": 100,
+            "radius_range_m": "1-2",
+            "radius_center_m": 1.5,
+            "accumulated_time_s": 0.0
+        }
+    ],
+    "Radius_distribution_score": [
+        {
+            "rank": 1,
+            "radius_range_m": "9-10",
+            "radius_center_m": 9.5,
+            "accumulated_time_s": 7.23309333038344,
+            "weight_ratio": 0.03309052350761824,
+            "weighted_score": 11.581683227666385,
+            "skidpad_bonus": 75.0,
+            "total_score": 86.58168322766639
+        },
+        {
+            "rank": 2,
+            "radius_range_m": "5-6",
+            "radius_center_m": 5.5,
+            "accumulated_time_s": 27.85187434847733,
+            "weight_ratio": 0.12741894245828309,
+            "weighted_score": 44.59662986039908,
+            "skidpad_bonus": 0.0,
+            "total_score": 44.59662986039908
+        },
+        {
+            "rank": 3,
+            "radius_range_m": "4-5",
+            "radius_center_m": 4.5,
+            "accumulated_time_s": 25.116675592004004,
+            "weight_ratio": 0.11490574034475654,
+            "weighted_score": 40.217009120664784,
+            "skidpad_bonus": 0.0,
+            "total_score": 40.217009120664784
+        },
+        {
+            "rank": 4,
+            "radius_range_m": "7-8",
+            "radius_center_m": 7.5,
+            "accumulated_time_s": 22.857866685244232,
+            "weight_ratio": 0.1045719639348247,
+            "weighted_score": 36.60018737718864,
+            "skidpad_bonus": 0.0,
+            "total_score": 36.60018737718864
+        },
+        {
+            "rank": 5,
+            "radius_range_m": "3-4",
+            "radius_center_m": 3.5,
+            "accumulated_time_s": 18.149385994919847,
+            "weight_ratio": 0.08303123663439511,
+            "weighted_score": 29.06093282203829,
+            "skidpad_bonus": 0.0,
+            "total_score": 29.06093282203829
+        },
+        {
+            "rank": 6,
+            "radius_range_m": "6-7",
+            "radius_center_m": 6.5,
+            "accumulated_time_s": 13.719871585400995,
+            "weight_ratio": 0.06276674618743623,
+            "weighted_score": 21.96836116560268,
+            "skidpad_bonus": 0.0,
+            "total_score": 21.96836116560268
+        },
+        {
+            "rank": 7,
+            "radius_range_m": "2-3",
+            "radius_center_m": 2.5,
+            "accumulated_time_s": 13.241985251845216,
+            "weight_ratio": 0.06058047425201538,
+            "weighted_score": 21.203165988205384,
+            "skidpad_bonus": 0.0,
+            "total_score": 21.203165988205384
+        },
+        {
+            "rank": 8,
+            "radius_range_m": "15-16",
+            "radius_center_m": 15.5,
+            "accumulated_time_s": 9.863160385488527,
+            "weight_ratio": 0.04512276085591657,
+            "weighted_score": 15.7929662995708,
+            "skidpad_bonus": 0.0,
+            "total_score": 15.7929662995708
+        },
+        {
+            "rank": 9,
+            "radius_range_m": "8-9",
+            "radius_center_m": 8.5,
+            "accumulated_time_s": 9.166222084710668,
+            "weight_ratio": 0.04193435277491277,
+            "weighted_score": 14.677023471219469,
+            "skidpad_bonus": 0.0,
+            "total_score": 14.677023471219469
+        },
+        {
+            "rank": 10,
+            "radius_range_m": "14-15",
+            "radius_center_m": 14.5,
+            "accumulated_time_s": 7.093966804740688,
+            "weight_ratio": 0.03245403655009814,
+            "weighted_score": 11.35891279253435,
+            "skidpad_bonus": 0.0,
+            "total_score": 11.35891279253435
+        },
+        {
+            "rank": 11,
+            "radius_range_m": "24-25",
+            "radius_center_m": 24.5,
+            "accumulated_time_s": 6.621283471384686,
+            "weight_ratio": 0.030291567708672727,
+            "weighted_score": 10.602048698035455,
+            "skidpad_bonus": 0.0,
+            "total_score": 10.602048698035455
+        },
+        {
+            "rank": 12,
+            "radius_range_m": "38-39",
+            "radius_center_m": 38.5,
+            "accumulated_time_s": 5.090935124703066,
+            "weight_ratio": 0.02329040988757928,
+            "weighted_score": 8.151643460652748,
+            "skidpad_bonus": 0.0,
+            "total_score": 8.151643460652748
+        },
+        {
+            "rank": 13,
+            "radius_range_m": "12-13",
+            "radius_center_m": 12.5,
+            "accumulated_time_s": 4.3556560410882526,
+            "weight_ratio": 0.019926597381688917,
+            "weighted_score": 6.9743090835911214,
+            "skidpad_bonus": 0.0,
+            "total_score": 6.9743090835911214
+        },
+        {
+            "rank": 14,
+            "radius_range_m": "26-27",
+            "radius_center_m": 26.5,
+            "accumulated_time_s": 4.217421012824246,
+            "weight_ratio": 0.019294188916401788,
+            "weighted_score": 6.752966120740626,
+            "skidpad_bonus": 0.0,
+            "total_score": 6.752966120740626
+        },
+        {
+            "rank": 15,
+            "radius_range_m": "13-14",
+            "radius_center_m": 13.5,
+            "accumulated_time_s": 3.772566977070994,
+            "weight_ratio": 0.017259035731564964,
+            "weighted_score": 6.040662506047737,
+            "skidpad_bonus": 0.0,
+            "total_score": 6.040662506047737
+        },
+        {
+            "rank": 16,
+            "radius_range_m": "16-17",
+            "radius_center_m": 16.5,
+            "accumulated_time_s": 3.3695146495243193,
+            "weight_ratio": 0.015415120284841915,
+            "weighted_score": 5.39529209969467,
+            "skidpad_bonus": 0.0,
+            "total_score": 5.39529209969467
+        },
+        {
+            "rank": 17,
+            "radius_range_m": "11-12",
+            "radius_center_m": 11.5,
+            "accumulated_time_s": 2.977548134805062,
+            "weight_ratio": 0.013621921085402137,
+            "weighted_score": 4.767672379890748,
+            "skidpad_bonus": 0.0,
+            "total_score": 4.767672379890748
+        },
+        {
+            "rank": 18,
+            "radius_range_m": "18-19",
+            "radius_center_m": 18.5,
+            "accumulated_time_s": 2.9505719030328237,
+            "weight_ratio": 0.013498508101380972,
+            "weighted_score": 4.7244778354833405,
+            "skidpad_bonus": 0.0,
+            "total_score": 4.7244778354833405
+        },
+        {
+            "rank": 19,
+            "radius_range_m": "10-11",
+            "radius_center_m": 10.5,
+            "accumulated_time_s": 2.7823722294043023,
+            "weight_ratio": 0.01272901502283898,
+            "weighted_score": 4.455155257993643,
+            "skidpad_bonus": 0.0,
+            "total_score": 4.455155257993643
+        },
+        {
+            "rank": 20,
+            "radius_range_m": "28-29",
+            "radius_center_m": 28.5,
+            "accumulated_time_s": 2.7410749100937153,
+            "weight_ratio": 0.012540084802664959,
+            "weighted_score": 4.389029680932736,
+            "skidpad_bonus": 0.0,
+            "total_score": 4.389029680932736
+        },
+        {
+            "rank": 21,
+            "radius_range_m": "48-49",
+            "radius_center_m": 48.5,
+            "accumulated_time_s": 2.4256660476638956,
+            "weight_ratio": 0.011097127564313965,
+            "weighted_score": 3.883994647509888,
+            "skidpad_bonus": 0.0,
+            "total_score": 3.883994647509888
+        },
+        {
+            "rank": 22,
+            "radius_range_m": "20-21",
+            "radius_center_m": 20.5,
+            "accumulated_time_s": 2.1239346801058616,
+            "weight_ratio": 0.009716743203832385,
+            "weighted_score": 3.4008601213413345,
+            "skidpad_bonus": 0.0,
+            "total_score": 3.4008601213413345
+        },
+        {
+            "rank": 23,
+            "radius_range_m": "70-71",
+            "radius_center_m": 70.5,
+            "accumulated_time_s": 1.964626089379209,
+            "weight_ratio": 0.008987925749720207,
+            "weighted_score": 3.1457740124020726,
+            "skidpad_bonus": 0.0,
+            "total_score": 3.1457740124020726
+        },
+        {
+            "rank": 24,
+            "radius_range_m": "17-18",
+            "radius_center_m": 17.5,
+            "accumulated_time_s": 1.8092042558868116,
+            "weight_ratio": 0.008276889737897494,
+            "weighted_score": 2.8969114082641227,
+            "skidpad_bonus": 0.0,
+            "total_score": 2.8969114082641227
+        },
+        {
+            "rank": 25,
+            "radius_range_m": "27-28",
+            "radius_center_m": 27.5,
+            "accumulated_time_s": 1.6734668632864498,
+            "weight_ratio": 0.007655907652426883,
+            "weighted_score": 2.679567678349409,
+            "skidpad_bonus": 0.0,
+            "total_score": 2.679567678349409
+        },
+        {
+            "rank": 26,
+            "radius_range_m": "19-20",
+            "radius_center_m": 19.5,
+            "accumulated_time_s": 1.6391850057997885,
+            "weight_ratio": 0.007499072318050375,
+            "weighted_score": 2.624675311317631,
+            "skidpad_bonus": 0.0,
+            "total_score": 2.624675311317631
+        },
+        {
+            "rank": 27,
+            "radius_range_m": "22-23",
+            "radius_center_m": 22.5,
+            "accumulated_time_s": 1.0783211727332684,
+            "weight_ratio": 0.004933188400211215,
+            "weighted_score": 1.7266159400739252,
+            "skidpad_bonus": 0.0,
+            "total_score": 1.7266159400739252
+        },
+        {
+            "rank": 28,
+            "radius_range_m": "21-22",
+            "radius_center_m": 21.5,
+            "accumulated_time_s": 1.0212267460541682,
+            "weight_ratio": 0.004671988332427961,
+            "weighted_score": 1.6351959163497864,
+            "skidpad_bonus": 0.0,
+            "total_score": 1.6351959163497864
+        },
+        {
+            "rank": 29,
+            "radius_range_m": "66-67",
+            "radius_center_m": 66.5,
+            "accumulated_time_s": 0.922410714212873,
+            "weight_ratio": 0.004219916988230252,
+            "weighted_score": 1.4769709458805882,
+            "skidpad_bonus": 0.0,
+            "total_score": 1.4769709458805882
+        },
+        {
+            "rank": 30,
+            "radius_range_m": "25-26",
+            "radius_center_m": 25.5,
+            "accumulated_time_s": 0.8925808655370133,
+            "weight_ratio": 0.004083449053454564,
+            "weighted_score": 1.4292071687090975,
+            "skidpad_bonus": 0.0,
+            "total_score": 1.4292071687090975
+        },
+        {
+            "rank": 31,
+            "radius_range_m": "23-24",
+            "radius_center_m": 23.5,
+            "accumulated_time_s": 0.7398699799231849,
+            "weight_ratio": 0.0033848152989243005,
+            "weighted_score": 1.1846853546235052,
+            "skidpad_bonus": 0.0,
+            "total_score": 1.1846853546235052
+        },
+        {
+            "rank": 32,
+            "radius_range_m": "29-30",
+            "radius_center_m": 29.5,
+            "accumulated_time_s": 0.6890974108330852,
+            "weight_ratio": 0.0031525369618039013,
+            "weighted_score": 1.1033879366313655,
+            "skidpad_bonus": 0.0,
+            "total_score": 1.1033879366313655
+        },
+        {
+            "rank": 33,
+            "radius_range_m": "30-31",
+            "radius_center_m": 30.5,
+            "accumulated_time_s": 0.49883996281576515,
+            "weight_ratio": 0.002282132244409934,
+            "weighted_score": 0.7987462855434769,
+            "skidpad_bonus": 0.0,
+            "total_score": 0.7987462855434769
+        },
+        {
+            "rank": 34,
+            "radius_range_m": "32-33",
+            "radius_center_m": 32.5,
+            "accumulated_time_s": 0.4021600656094506,
+            "weight_ratio": 0.0018398334567278913,
+            "weighted_score": 0.643941709854762,
+            "skidpad_bonus": 0.0,
+            "total_score": 0.643941709854762
+        },
+        {
+            "rank": 35,
+            "radius_range_m": "36-37",
+            "radius_center_m": 36.5,
+            "accumulated_time_s": 0.353722895969355,
+            "weight_ratio": 0.0016182392884506367,
+            "weighted_score": 0.5663837509577229,
+            "skidpad_bonus": 0.0,
+            "total_score": 0.5663837509577229
+        },
+        {
+            "rank": 36,
+            "radius_range_m": "33-34",
+            "radius_center_m": 33.5,
+            "accumulated_time_s": 0.34328922331229705,
+            "weight_ratio": 0.0015705065032425593,
+            "weighted_score": 0.5496772761348958,
+            "skidpad_bonus": 0.0,
+            "total_score": 0.5496772761348958
+        },
+        {
+            "rank": 37,
+            "radius_range_m": "34-35",
+            "radius_center_m": 34.5,
+            "accumulated_time_s": 0.32486614023105176,
+            "weight_ratio": 0.0014862231356794818,
+            "weighted_score": 0.5201780974878186,
+            "skidpad_bonus": 0.0,
+            "total_score": 0.5201780974878186
+        },
+        {
+            "rank": 38,
+            "radius_range_m": "40-41",
+            "radius_center_m": 40.5,
+            "accumulated_time_s": 0.3003590724271419,
+            "weight_ratio": 0.0013741062769267297,
+            "weighted_score": 0.48093719692435544,
+            "skidpad_bonus": 0.0,
+            "total_score": 0.48093719692435544
+        },
+        {
+            "rank": 39,
+            "radius_range_m": "39-40",
+            "radius_center_m": 39.5,
+            "accumulated_time_s": 0.29167260034691367,
+            "weight_ratio": 0.0013343667221553794,
+            "weighted_score": 0.46702835275438276,
+            "skidpad_bonus": 0.0,
+            "total_score": 0.46702835275438276
+        },
+        {
+            "rank": 40,
+            "radius_range_m": "31-32",
+            "radius_center_m": 31.5,
+            "accumulated_time_s": 0.2858265656037986,
+            "weight_ratio": 0.0013076218232224706,
+            "weighted_score": 0.4576676381278647,
+            "skidpad_bonus": 0.0,
+            "total_score": 0.4576676381278647
+        },
+        {
+            "rank": 41,
+            "radius_range_m": "41-42",
+            "radius_center_m": 41.5,
+            "accumulated_time_s": 0.26149911179692253,
+            "weight_ratio": 0.001196326676691539,
+            "weighted_score": 0.4187143368420386,
+            "skidpad_bonus": 0.0,
+            "total_score": 0.4187143368420386
+        },
+        {
+            "rank": 42,
+            "radius_range_m": "50-51",
+            "radius_center_m": 50.5,
+            "accumulated_time_s": 0.25840758501502137,
+            "weight_ratio": 0.0011821833171386893,
+            "weighted_score": 0.41376416099854124,
+            "skidpad_bonus": 0.0,
+            "total_score": 0.41376416099854124
+        },
+        {
+            "rank": 43,
+            "radius_range_m": "44-45",
+            "radius_center_m": 44.5,
+            "accumulated_time_s": 0.2408427921562577,
+            "weight_ratio": 0.00110182652310178,
+            "weighted_score": 0.385639283085623,
+            "skidpad_bonus": 0.0,
+            "total_score": 0.385639283085623
+        },
+        {
+            "rank": 44,
+            "radius_range_m": "49-50",
+            "radius_center_m": 49.5,
+            "accumulated_time_s": 0.2395876460685713,
+            "weight_ratio": 0.0010960843821915258,
+            "weighted_score": 0.383629533767034,
+            "skidpad_bonus": 0.0,
+            "total_score": 0.383629533767034
+        },
+        {
+            "rank": 45,
+            "radius_range_m": "47-48",
+            "radius_center_m": 47.5,
+            "accumulated_time_s": 0.2324909811427176,
+            "weight_ratio": 0.0010636180020650297,
+            "weighted_score": 0.3722663007227604,
+            "skidpad_bonus": 0.0,
+            "total_score": 0.3722663007227604
+        },
+        {
+            "rank": 46,
+            "radius_range_m": "35-36",
+            "radius_center_m": 35.5,
+            "accumulated_time_s": 0.23129101901091076,
+            "weight_ratio": 0.0010581283210506828,
+            "weighted_score": 0.370344912367739,
+            "skidpad_bonus": 0.0,
+            "total_score": 0.370344912367739
+        },
+        {
+            "rank": 47,
+            "radius_range_m": "42-43",
+            "radius_center_m": 42.5,
+            "accumulated_time_s": 0.2227686260573023,
+            "weight_ratio": 0.001019139408355761,
+            "weighted_score": 0.35669879292451634,
+            "skidpad_bonus": 0.0,
+            "total_score": 0.35669879292451634
+        },
+        {
+            "rank": 48,
+            "radius_range_m": "37-38",
+            "radius_center_m": 37.5,
+            "accumulated_time_s": 0.19941588104907737,
+            "weight_ratio": 0.0009123034361976197,
+            "weighted_score": 0.3193062026691669,
+            "skidpad_bonus": 0.0,
+            "total_score": 0.3193062026691669
+        },
+        {
+            "rank": 49,
+            "radius_range_m": "46-47",
+            "radius_center_m": 46.5,
+            "accumulated_time_s": 0.17924311718647346,
+            "weight_ratio": 0.0008200154915633233,
+            "weighted_score": 0.2870054220471631,
+            "skidpad_bonus": 0.0,
+            "total_score": 0.2870054220471631
+        },
+        {
+            "rank": 50,
+            "radius_range_m": "45-46",
+            "radius_center_m": 45.5,
+            "accumulated_time_s": 0.1698733047587666,
+            "weight_ratio": 0.0007771497376958046,
+            "weighted_score": 0.2720024081935316,
+            "skidpad_bonus": 0.0,
+            "total_score": 0.2720024081935316
+        },
+        {
+            "rank": 51,
+            "radius_range_m": "60-61",
+            "radius_center_m": 60.5,
+            "accumulated_time_s": 0.15720546209092845,
+            "weight_ratio": 0.0007191958960344409,
+            "weighted_score": 0.2517185636120543,
+            "skidpad_bonus": 0.0,
+            "total_score": 0.2517185636120543
+        },
+        {
+            "rank": 52,
+            "radius_range_m": "61-62",
+            "radius_center_m": 61.5,
+            "accumulated_time_s": 0.1363677205071383,
+            "weight_ratio": 0.0006238657590890728,
+            "weighted_score": 0.21835301568117546,
+            "skidpad_bonus": 0.0,
+            "total_score": 0.21835301568117546
+        },
+        {
+            "rank": 53,
+            "radius_range_m": "54-55",
+            "radius_center_m": 54.5,
+            "accumulated_time_s": 0.13467695107704003,
+            "weight_ratio": 0.0006161306942949257,
+            "weighted_score": 0.215645743003224,
+            "skidpad_bonus": 0.0,
+            "total_score": 0.215645743003224
+        },
+        {
+            "rank": 54,
+            "radius_range_m": "64-65",
+            "radius_center_m": 64.5,
+            "accumulated_time_s": 0.13333849647838747,
+            "weight_ratio": 0.0006100074270650468,
+            "weighted_score": 0.2135025994727664,
+            "skidpad_bonus": 0.0,
+            "total_score": 0.2135025994727664
+        },
+        {
+            "rank": 55,
+            "radius_range_m": "63-64",
+            "radius_center_m": 63.5,
+            "accumulated_time_s": 0.12447760088721793,
+            "weight_ratio": 0.0005694699059153504,
+            "weighted_score": 0.19931446707037265,
+            "skidpad_bonus": 0.0,
+            "total_score": 0.19931446707037265
+        },
+        {
+            "rank": 56,
+            "radius_range_m": "67-68",
+            "radius_center_m": 67.5,
+            "accumulated_time_s": 0.12097690689560636,
+            "weight_ratio": 0.0005534546560725477,
+            "weighted_score": 0.19370912962539172,
+            "skidpad_bonus": 0.0,
+            "total_score": 0.19370912962539172
+        },
+        {
+            "rank": 57,
+            "radius_range_m": "69-70",
+            "radius_center_m": 69.5,
+            "accumulated_time_s": 0.11921450440601689,
+            "weight_ratio": 0.0005453918787312585,
+            "weighted_score": 0.1908871575559405,
+            "skidpad_bonus": 0.0,
+            "total_score": 0.1908871575559405
+        },
+        {
+            "rank": 58,
+            "radius_range_m": "53-54",
+            "radius_center_m": 53.5,
+            "accumulated_time_s": 0.11522515517967236,
+            "weight_ratio": 0.0005271410905380618,
+            "weighted_score": 0.18449938168832164,
+            "skidpad_bonus": 0.0,
+            "total_score": 0.18449938168832164
+        },
+        {
+            "rank": 59,
+            "radius_range_m": "55-56",
+            "radius_center_m": 55.5,
+            "accumulated_time_s": 0.1130999800722634,
+            "weight_ratio": 0.0005174186725299711,
+            "weighted_score": 0.1810965353854899,
+            "skidpad_bonus": 0.0,
+            "total_score": 0.1810965353854899
+        },
+        {
+            "rank": 60,
+            "radius_range_m": "71-72",
+            "radius_center_m": 71.5,
+            "accumulated_time_s": 0.10875764807300925,
+            "weight_ratio": 0.0004975530310214319,
+            "weighted_score": 0.17414356085750118,
+            "skidpad_bonus": 0.0,
+            "total_score": 0.17414356085750118
+        },
+        {
+            "rank": 61,
+            "radius_range_m": "72-73",
+            "radius_center_m": 72.5,
+            "accumulated_time_s": 0.10779417486335774,
+            "weight_ratio": 0.0004931452581037218,
+            "weighted_score": 0.17260084033630263,
+            "skidpad_bonus": 0.0,
+            "total_score": 0.17260084033630263
+        },
+        {
+            "rank": 62,
+            "radius_range_m": "51-52",
+            "radius_center_m": 51.5,
+            "accumulated_time_s": 0.10676793566722154,
+            "weight_ratio": 0.0004884503384209443,
+            "weighted_score": 0.1709576184473305,
+            "skidpad_bonus": 0.0,
+            "total_score": 0.1709576184473305
+        },
+        {
+            "rank": 63,
+            "radius_range_m": "52-53",
+            "radius_center_m": 52.5,
+            "accumulated_time_s": 0.10575347389027456,
+            "weight_ratio": 0.00048380929900055785,
+            "weighted_score": 0.16933325465019525,
+            "skidpad_bonus": 0.0,
+            "total_score": 0.16933325465019525
+        },
+        {
+            "rank": 64,
+            "radius_range_m": "43-44",
+            "radius_center_m": 43.5,
+            "accumulated_time_s": 0.10433111808504236,
+            "weight_ratio": 0.0004773021939406072,
+            "weighted_score": 0.16705576787921253,
+            "skidpad_bonus": 0.0,
+            "total_score": 0.16705576787921253
+        },
+        {
+            "rank": 65,
+            "radius_range_m": "83-84",
+            "radius_center_m": 83.5,
+            "accumulated_time_s": 0.10048809119149382,
+            "weight_ratio": 0.00045972081264870624,
+            "weighted_score": 0.16090228442704718,
+            "skidpad_bonus": 0.0,
+            "total_score": 0.16090228442704718
+        },
+        {
+            "rank": 66,
+            "radius_range_m": "58-59",
+            "radius_center_m": 58.5,
+            "accumulated_time_s": 0.09973982203999299,
+            "weight_ratio": 0.00045629757215991644,
+            "weighted_score": 0.15970415025597076,
+            "skidpad_bonus": 0.0,
+            "total_score": 0.15970415025597076
+        },
+        {
+            "rank": 67,
+            "radius_range_m": "84-85",
+            "radius_center_m": 84.5,
+            "accumulated_time_s": 0.09951572913135465,
+            "weight_ratio": 0.00045527237431959014,
+            "weighted_score": 0.15934533101185655,
+            "skidpad_bonus": 0.0,
+            "total_score": 0.15934533101185655
+        },
+        {
+            "rank": 68,
+            "radius_range_m": "68-69",
+            "radius_center_m": 68.5,
+            "accumulated_time_s": 0.09242907825338875,
+            "weight_ratio": 0.00042285180724594746,
+            "weighted_score": 0.1479981325360816,
+            "skidpad_bonus": 0.0,
+            "total_score": 0.1479981325360816
+        },
+        {
+            "rank": 69,
+            "radius_range_m": "56-57",
+            "radius_center_m": 56.5,
+            "accumulated_time_s": 0.08136593884083254,
+            "weight_ratio": 0.0003722392880819175,
+            "weighted_score": 0.13028375082867114,
+            "skidpad_bonus": 0.0,
+            "total_score": 0.13028375082867114
+        },
+        {
+            "rank": 70,
+            "radius_range_m": "79-80",
+            "radius_center_m": 79.5,
+            "accumulated_time_s": 0.07714967451289567,
+            "weight_ratio": 0.00035295039085839295,
+            "weighted_score": 0.12353263680043754,
+            "skidpad_bonus": 0.0,
+            "total_score": 0.12353263680043754
+        },
+        {
+            "rank": 71,
+            "radius_range_m": "65-66",
+            "radius_center_m": 65.5,
+            "accumulated_time_s": 0.07564303344065593,
+            "weight_ratio": 0.00034605769093855803,
+            "weighted_score": 0.12112019182849532,
+            "skidpad_bonus": 0.0,
+            "total_score": 0.12112019182849532
+        },
+        {
+            "rank": 72,
+            "radius_range_m": "73-74",
+            "radius_center_m": 73.5,
+            "accumulated_time_s": 0.07131041455107834,
+            "weight_ratio": 0.0003262364857271056,
+            "weighted_score": 0.11418277000448696,
+            "skidpad_bonus": 0.0,
+            "total_score": 0.11418277000448696
+        },
+        {
+            "rank": 73,
+            "radius_range_m": "59-60",
+            "radius_center_m": 59.5,
+            "accumulated_time_s": 0.06946940156808523,
+            "weight_ratio": 0.00031781407492595333,
+            "weighted_score": 0.11123492622408367,
+            "skidpad_bonus": 0.0,
+            "total_score": 0.11123492622408367
+        },
+        {
+            "rank": 74,
+            "radius_range_m": "87-88",
+            "radius_center_m": 87.5,
+            "accumulated_time_s": 0.06526732038969385,
+            "weight_ratio": 0.00029859006388901723,
+            "weighted_score": 0.10450652236115603,
+            "skidpad_bonus": 0.0,
+            "total_score": 0.10450652236115603
+        },
+        {
+            "rank": 75,
+            "radius_range_m": "74-75",
+            "radius_center_m": 74.5,
+            "accumulated_time_s": 0.06212509384491227,
+            "weight_ratio": 0.00028421475907861396,
+            "weighted_score": 0.09947516567751488,
+            "skidpad_bonus": 0.0,
+            "total_score": 0.09947516567751488
+        },
+        {
+            "rank": 76,
+            "radius_range_m": "80-81",
+            "radius_center_m": 80.5,
+            "accumulated_time_s": 0.05972858046371243,
+            "weight_ratio": 0.0002732510014227023,
+            "weighted_score": 0.0956378504979458,
+            "skidpad_bonus": 0.0,
+            "total_score": 0.0956378504979458
+        },
+        {
+            "rank": 77,
+            "radius_range_m": "62-63",
+            "radius_center_m": 62.5,
+            "accumulated_time_s": 0.05804139873171721,
+            "weight_ratio": 0.00026553234991164097,
+            "weighted_score": 0.09293632246907434,
+            "skidpad_bonus": 0.0,
+            "total_score": 0.09293632246907434
+        },
+        {
+            "rank": 78,
+            "radius_range_m": "77-78",
+            "radius_center_m": 77.5,
+            "accumulated_time_s": 0.05221452711035113,
+            "weight_ratio": 0.00023887511993332037,
+            "weighted_score": 0.08360629197666213,
+            "skidpad_bonus": 0.0,
+            "total_score": 0.08360629197666213
+        },
+        {
+            "rank": 79,
+            "radius_range_m": "78-79",
+            "radius_center_m": 78.5,
+            "accumulated_time_s": 0.05178649535125146,
+            "weight_ratio": 0.0002369169266210624,
+            "weighted_score": 0.08292092431737184,
+            "skidpad_bonus": 0.0,
+            "total_score": 0.08292092431737184
+        },
+        {
+            "rank": 80,
+            "radius_range_m": "57-58",
+            "radius_center_m": 57.5,
+            "accumulated_time_s": 0.05035794575468344,
+            "weight_ratio": 0.00023038148571800321,
+            "weighted_score": 0.08063352000130113,
+            "skidpad_bonus": 0.0,
+            "total_score": 0.08063352000130113
+        },
+        {
+            "rank": 81,
+            "radius_range_m": "89-90",
+            "radius_center_m": 89.5,
+            "accumulated_time_s": 0.04848070992554199,
+            "weight_ratio": 0.0002217933597950856,
+            "weighted_score": 0.07762767592827996,
+            "skidpad_bonus": 0.0,
+            "total_score": 0.07762767592827996
+        },
+        {
+            "rank": 82,
+            "radius_range_m": "90-91",
+            "radius_center_m": 90.5,
+            "accumulated_time_s": 0.04826848347113355,
+            "weight_ratio": 0.00022082244954164793,
+            "weighted_score": 0.07728785733957677,
+            "skidpad_bonus": 0.0,
+            "total_score": 0.07728785733957677
+        },
+        {
+            "rank": 83,
+            "radius_range_m": "97-98",
+            "radius_center_m": 97.5,
+            "accumulated_time_s": 0.0464928006166474,
+            "weight_ratio": 0.00021269891614389294,
+            "weighted_score": 0.07444462065036253,
+            "skidpad_bonus": 0.0,
+            "total_score": 0.07444462065036253
+        },
+        {
+            "rank": 84,
+            "radius_range_m": "82-83",
+            "radius_center_m": 82.5,
+            "accumulated_time_s": 0.04210330396458062,
+            "weight_ratio": 0.00019261750207701163,
+            "weighted_score": 0.06741612572695407,
+            "skidpad_bonus": 0.0,
+            "total_score": 0.06741612572695407
+        },
+        {
+            "rank": 85,
+            "radius_range_m": "86-87",
+            "radius_center_m": 86.5,
+            "accumulated_time_s": 0.041137487232248304,
+            "weight_ratio": 0.00018819900782766406,
+            "weighted_score": 0.06586965273968243,
+            "skidpad_bonus": 0.0,
+            "total_score": 0.06586965273968243
+        },
+        {
+            "rank": 86,
+            "radius_range_m": "75-76",
+            "radius_center_m": 75.5,
+            "accumulated_time_s": 0.03513301921108791,
+            "weight_ratio": 0.00016072929588985103,
+            "weighted_score": 0.05625525356144786,
+            "skidpad_bonus": 0.0,
+            "total_score": 0.05625525356144786
+        },
+        {
+            "rank": 87,
+            "radius_range_m": "91-92",
+            "radius_center_m": 91.5,
+            "accumulated_time_s": 0.031956512653010805,
+            "weight_ratio": 0.0001461971641820217,
+            "weighted_score": 0.051169007463707596,
+            "skidpad_bonus": 0.0,
+            "total_score": 0.051169007463707596
+        },
+        {
+            "rank": 88,
+            "radius_range_m": "94-95",
+            "radius_center_m": 94.5,
+            "accumulated_time_s": 0.031456327120594096,
+            "weight_ratio": 0.00014390887612011053,
+            "weighted_score": 0.05036810664203869,
+            "skidpad_bonus": 0.0,
+            "total_score": 0.05036810664203869
+        },
+        {
+            "rank": 89,
+            "radius_range_m": "95-96",
+            "radius_center_m": 95.5,
+            "accumulated_time_s": 0.03119538733534455,
+            "weight_ratio": 0.0001427151082944415,
+            "weighted_score": 0.04995028790305452,
+            "skidpad_bonus": 0.0,
+            "total_score": 0.04995028790305452
+        },
+        {
+            "rank": 90,
+            "radius_range_m": "96-97",
+            "radius_center_m": 96.5,
+            "accumulated_time_s": 0.031175502007215528,
+            "weight_ratio": 0.0001426241353333785,
+            "weighted_score": 0.049918447366682474,
+            "skidpad_bonus": 0.0,
+            "total_score": 0.049918447366682474
+        },
+        {
+            "rank": 91,
+            "radius_range_m": "98-99",
+            "radius_center_m": 98.5,
+            "accumulated_time_s": 0.030748914521694815,
+            "weight_ratio": 0.00014067254939733326,
+            "weighted_score": 0.04923539228906664,
+            "skidpad_bonus": 0.0,
+            "total_score": 0.04923539228906664
+        },
+        {
+            "rank": 92,
+            "radius_range_m": "76-77",
+            "radius_center_m": 76.5,
+            "accumulated_time_s": 0.026275877907806944,
+            "weight_ratio": 0.00012020895015127637,
+            "weighted_score": 0.04207313255294673,
+            "skidpad_bonus": 0.0,
+            "total_score": 0.04207313255294673
+        },
+        {
+            "rank": 93,
+            "radius_range_m": "81-82",
+            "radius_center_m": 81.5,
+            "accumulated_time_s": 0.02543336159337173,
+            "weight_ratio": 0.00011635454033863644,
+            "weighted_score": 0.04072408911852275,
+            "skidpad_bonus": 0.0,
+            "total_score": 0.04072408911852275
+        },
+        {
+            "rank": 94,
+            "radius_range_m": "92-93",
+            "radius_center_m": 92.5,
+            "accumulated_time_s": 0.023818054511679065,
+            "weight_ratio": 0.00010896470662333724,
+            "weighted_score": 0.03813764731816804,
+            "skidpad_bonus": 0.0,
+            "total_score": 0.03813764731816804
+        },
+        {
+            "rank": 95,
+            "radius_range_m": "88-89",
+            "radius_center_m": 88.5,
+            "accumulated_time_s": 0.016268987295603665,
+            "weight_ratio": 7.442864096456732e-05,
+            "weighted_score": 0.02605002433759856,
+            "skidpad_bonus": 0.0,
+            "total_score": 0.02605002433759856
+        },
+        {
+            "rank": 96,
+            "radius_range_m": "93-94",
+            "radius_center_m": 93.5,
+            "accumulated_time_s": 0.015836080595818203,
+            "weight_ratio": 7.244814539074665e-05,
+            "weighted_score": 0.025356850886761328,
+            "skidpad_bonus": 0.0,
+            "total_score": 0.025356850886761328
+        },
+        {
+            "rank": 97,
+            "radius_range_m": "85-86",
+            "radius_center_m": 85.5,
+            "accumulated_time_s": 0.008189309263002542,
+            "weight_ratio": 3.746509526432114e-05,
+            "weighted_score": 0.013112783342512398,
+            "skidpad_bonus": 0.0,
+            "total_score": 0.013112783342512398
+        },
+        {
+            "rank": 98,
+            "radius_range_m": "99-100",
+            "radius_center_m": 99.5,
+            "accumulated_time_s": 0.007655027474640974,
+            "weight_ratio": 3.5020820972545405e-05,
+            "weighted_score": 0.012257287340390891,
+            "skidpad_bonus": 0.0,
+            "total_score": 0.012257287340390891
+        }
+    ]
+}
