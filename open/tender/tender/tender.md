@@ -8,7 +8,7 @@ layout: base
 
 ## 簡介
 
-本分析建立 main spring 與 tender spring 串聯後的分段剛性模型，用於估算不同空力下壓力與煞車加速度下的前後懸吊行程、車輛 heave 位移與 pitch 角。Tender 在未壓到底前會與 main spring 串聯，使初段剛性降低；當 tender bind 後，系統則切換為 main spring 主導。
+建立 main spring 與 tender spring 串聯後的分段剛性模型，用於估算不同空力下壓力與煞車加速度下的前後懸吊行程、車輛 heave 位移與 pitch 角。Tender 在未壓到底前會與 main spring 串聯，使初段剛性降低；當 tender bind 後，系統則切換為 main spring 主導。
 
 此工具適合用於評估 tender spring 是否會在空力下壓力或煞車負載轉移下過早壓滿，以及切換到 main spring 後是否造成 heave / pitch 梯度突變。對於需要穩定空力平台的車輛，這類分析可作為 tender 行程與剛性選型的初步依據。
 
@@ -99,4 +99,12 @@ $$\frac{d\theta}{da_x}$$
 1. 前懸吊行程、後懸吊行程、整車 heave 與 pitch 角，並比較不同下壓力比例下隨煞車加速度變化的趨勢。
 2. Pitch gradient 對煞車加速度的關係，用於觀察 tender bind 前後是否造成 pitch 響應斜率改變。
 
-結果可用來檢查 tender 設定是否在目標下壓力或煞車狀態下過早壓滿，也可評估懸吊平台在空力負載與縱向負載轉移下是否維持穩定。由於程式目前未儲存圖片檔，若需要將結果放入文件頁面，可先輸出圖檔後再於此段落加入置中圖片。
+<div style="text-align: center;">
+<img src="tender_heave_pitch_response.png" alt="tender_heave_pitch_response" width="800">
+</div>
+
+<div style="text-align: center;">
+<img src="tender_pitch_gradient.png" alt="tender_pitch_gradient" width="800">
+</div>
+
+結果可用來檢查 tender 設定是否在目標下壓力或煞車狀態下過早壓滿，也可評估懸吊平台在空力負載與縱向負載轉移下是否維持穩定。

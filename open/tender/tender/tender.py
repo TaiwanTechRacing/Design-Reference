@@ -1,30 +1,40 @@
 import numpy as np
 import matplotlib.pyplot as plt
+from pathlib import Path
+import sys
 import pandas as pd
+from scipy.optimize import root
+
+sys.path.append(str(Path(__file__).resolve().parent.parent.parent))
+
+from load_data import ParameterLoader
+
+param = ParameterLoader().load("data.xlsx")
+
 # ==========================================
 # 1. 車輛與懸吊參數設定 (依據你的描述設定)
 # ==========================================
-m_car = 320.0             # 車重 (kg)
+m_car = param.m            # 車重 (kg)
 g = 9.81                  # 重力加速度 (m/s^2)
-W_total = m_car * g       # 總車重 (N) ~ 3139.2 N
+W_total = m_car * g       # 總車重 (N)
 
 # Heave 剛性設定 (N/mm)
-k_main_heave = 140000/1000    # Main Heave 剛性
-k_tender_heave = 0.7 * k_main_heave # Tender Heave 剛性
+k_main_heave = param.K_heave_main/1000    # Main Heave 剛性
+tender_rate = param.tender_rate
+k_tender_heave = tender_rate * k_main_heave # Tender Heave 剛性
 
 # 串聯後 Heave 初段總剛性 (N/mm)
-k_total_heave = (k_main_heave * k_tender_heave) / (k_main_heave + k_tender_heave) # ~26.667 N/mm
+k_total_heave = (k_main_heave * k_tender_heave) / (k_main_heave + k_tender_heave) # N/mm
 
 # 車輛幾何參數 (用於 Pitch 計算)
-wheelbase = 1.530         # 軸距 L (m)
-h_cg = 0.30              # 重心高度 (m)
-front_weight_dist = 0.5  # 前軸重分配比例 (45%)
-anti_dive = 0.0          # 抗俯仰幾何比例 (20% 抗俯仰)
-
+wheelbase = param.L         # 軸距 L (m)
+h_cg = param.h_cog              # 重心高度 (m)
+front_weight_dist = param.lr/param.L  # 前軸重分配比例
+anti_dive = param.anti          # 抗俯仰幾何比
 # ==========================================
 # 計算 10% 空力下壓力量吃掉的總行程
 # ==========================================
-downforce_10pct = 0.1 * W_total # 10% 車重下壓力 (N)
+downforce_10pct = param.cp_k * W_total # 10% 車重下壓力 (N)
 
 # 此時 Tender 未壓滿，使用串聯總剛性 k_total_heave
 heave_stroke_10pct = downforce_10pct / k_total_heave
@@ -105,9 +115,6 @@ def series_force(x, k_main, k_tender, tender_max_stroke):
 
     return F, status
 
-from scipy.optimize import root
-
-
 def suspension_equilibrium(
     downforce,
     ax
@@ -164,7 +171,6 @@ def suspension_equilibrium(
 
 
     return xf,xr
-
 
 def calculate_heave_and_pitch(downforce_N, a_x_g):
 
@@ -241,7 +247,8 @@ def calculate_heave_and_pitch(downforce_N, a_x_g):
 
 
     if not sol.success:
-        print("Solver failed")
+        pass
+        #print("Solver failed")
 
 
     front_stroke, rear_stroke = sol.x
@@ -419,6 +426,14 @@ ax.grid(True)
 ax.legend(title="Downforce")
 
 plt.tight_layout()
+
+save_path_1 = Path(__file__).parent / "tender_heave_pitch_response.png"
+plt.savefig(
+    save_path_1,
+    dpi=300,
+    bbox_inches="tight"
+)
+
 plt.show()
 
 # ==========================================
@@ -452,4 +467,15 @@ plt.grid(True)
 plt.legend(title="Downforce")
 
 plt.tight_layout()
+
+save_path_2 = Path(__file__).parent / "tender_pitch_gradient.png"
+plt.savefig(
+    save_path_2,
+    dpi=300,
+    bbox_inches="tight"
+)
+
 plt.show()
+
+print(f"Figure saved to: {save_path_1}")
+print(f"Figure saved to: {save_path_2}")

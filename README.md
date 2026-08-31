@@ -21,7 +21,7 @@
 
 [阻尼評估](open/damping/damping.md) : 阻尼分析
 
-[tender彈簧分析]() : 快好了等等我
+[tender彈簧分析](open/tender/tender.md) : tender 彈簧評估
 
 ## 煞車與傳動加速
 
