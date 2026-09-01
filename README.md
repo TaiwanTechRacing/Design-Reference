@@ -37,3 +37,12 @@
 [其他](open/other/other.md) : 全車的慣性與幾何分析還有地圖
 
 [電力與空力](open/Ele_Aero/Ele_Aero.md) : 更多其他組的分析
+
+---
+## 獨立大型專案
+
+[輪胎模型](https://dannyhsuc10.github.io/Tire-Modeling-and-Parameter-Fitting/) : 模型擬和工具
+
+[齒輪工具](https://github.com/DannyHsuC10/Transmission-system) : 設計齒輪
+
+[note](https://dannyhsuc10.github.io/Mechanics/) : 小筆記區
