@@ -4,9 +4,7 @@ layout: base
 
 # 地圖資料與賽道半徑分析
 
-[Download Code (OpenTRACK 賽道重建)](TrackAnalysis.py)
-
-[Download Code (分數權重分析)](score_weight.py)
+由於整個分析項目較大，不支援單一code下載，請上github翻。
 
 ## 簡介
 

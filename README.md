@@ -23,6 +23,8 @@
 
 [tender彈簧分析](open/tender/tender.md) : tender 彈簧評估
 
+[阻尼設定分析](open/HL_damping/outputs/00_HL_damping_analysis_overview.md) : 阻尼設定調整
+
 ## 煞車與傳動加速
 
 [煞車](open/Brake/Brake.md) : 煞車系統設計
